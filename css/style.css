@@ -1,0 +1,244 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+body{font-family: 'Ubuntu';overflow-x: hidden; background-color: #fde1e1;}
+div{border: 2px solid green;}
+header nav{height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important;}
+p,div{font-size: 15px;}
+nav .nav li{margin-left: 3%; padding: 0% !important;}
+nav .nav li .menu{padding: 10px !important; color: #232323; font-size: 14px; font-weight: 400 !important;}
+nav .nav li .menu:hover{color: #232323; background-color: #ffd9dd !important; border-radius: 8px;}
+nav .nav li .menu.active{color: #232323; font-weight: 600 !important;}
+nav .nav li .menu.active:hover{background: none !important;}
+nav .nav li:nth-child(4){margin-right: 7%;}
+.contact #a-contact{background-color: #ffa800; border-radius: 8px; color: #fff !important; font-weight: 400;}
+.contact #a-contact:hover{background-color: #efa002 !important; border-radius: 8px; color: #fff !important; font-weight: 500;}
+
+.navbar-header{margin-top: -20px;}
+.logo1{width: 170px;}
+
+.banners{background-color:#b70000; width: 100%; height: 765px; position: absolute;top:-218px; left: -0%; z-index: 900;}
+.banner1{background: linear-gradient(180deg, #b70000,rgb(84, 1, 1)); width: 100%; height: 160px; position: absolute;bottom: 40px; left: -0%; border-radius:0% 0% 100% 100%; animation: bounce 8s infinite; z-index: 910;}
+.banner2{background-color: #f18a98; width: 100%; height: 140px; position: absolute;bottom: 18px; left: -0%; border-radius:0% 0% 100% 100%; z-index: 980;animation: bounce 8s infinite; z-index: 900;}
+.banner3{background-color: #ea546b; width: 100%; height: 140px; position: absolute;bottom: 28px; left: -0%; border-radius:0% 0% 100% 100%; z-index: 980;animation: bounce2 8s infinite; z-index: 900;}
+
+.design{position: relative; z-index: 920;}
+.bg-design{width: 4.5%; height: 500px; border-radius: 50px; position: absolute; top: 120px; transform: rotate(30deg);}
+.bg-design:first-child{top: 115px; left: -2%; background-color: #700004af;}
+.bg-design:last-child{top: 110px; left: 1.5%; background-color: #700004af;}
+div img.empoule{position: absolute;top: -50px; width: 100%; z-index: 999;}
+
+
+.titre p{ z-index: 1000;}
+.banner h1{color: #fff; z-index: 990; font-size: 60px; margin-left: 50px;}
+#detail{z-index: 990;margin: 5px 0px 15px 50px; color: #fff;}
+#cta{z-index: 990;margin: 20px 0px 0px 50px;}
+#cta a{padding: 12px; margin-right: 2%;border-radius: 8px;border: none;color: #fff;}
+#cta a:first-child{background-color: #ffa800;}
+#cta a:last-child{background: transparent; border: 2px solid #fff; padding: 10px 20px}
+.about{margin-top: 300px; position: relative;}
+
+.about h2{font-size: 3em;}
+.illustr{margin:0px;}
+.illustration .img-illustr{width: 600px; z-index: 990; position: relative;}
+.description{margin-top: 25px; z-index: 900;}
+.description a.cta{background: transparent; color: #ff0000; font-weight: 500; border: 2px solid #ff0000; border-radius: 10px; margin-top: 15px; padding: 10px 20px}
+.about .bg-design{height: 350px; position: absolute; top: -30px; left: 88%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);transform: rotate(32deg);animation: bounce3 5s infinite; z-index: 800;}
+@keyframes bounce3 {0% { }50% {top: -90px;}100%{}}
+.row .portfolio{background-color: #b70000; color: #fff; margin: 8% 0%;  padding: 0 0 500px 0; z-index: 900;}
+.row .portfolio h2{font-size: 3em; padding-top: 50px;}
+.design-2 .bg-design:first-child{top: 70px; left: -30px; background-color: #700004af; ;animation: bounce5 8s infinite;}
+.design-2 .bg-design:last-child{top: 50px; left: 65px; background-color: #700004af; ;animation: bounce4 8s infinite;}
+@keyframes bounce4 {0% { }50% {left: 30px;}100%{}}
+@keyframes bounce5 {0% { }50% {left: -25px;}100%{}}
+div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
+.achievement{margin: 65px 0 40px 0;}
+.achievement .card img{width: 100%; border-radius: 10px; box-shadow: 2px 3px 8px #503737;margin-bottom: 10px;}
+.achievement .card img:hover{cursor: pointer;transition: all .4s; transform: scale(1.1);}
+.achievement .card img.img-mockup{width: 95%; border-radius: 10px;}
+.achievement .card{margin:2% 3% ; padding: 0px 5px;}
+.cta-link a{color: #efa002; text-decoration: underline;}
+.service{background-color: #151515; color: #fff; margin-top: -550px;  width: 100%; padding: 5% 15% 15% 15%; border-radius: 43%; z-index: 1000;}
+.service h2{font-size: 3em;}
+.service .card-service h3{font-size: 1.3em;}
+.service .card{background-color: #1d1d1d; margin:2% 2.2% 2% 1%; width: 30%; padding: 1% 2% 3% 2%; border-radius: 10px;}
+.service .card:hover{background-color: #2b2a2a; cursor: pointer;transition: all .4s; transform: scale(1.1);}
+.service .card-img{width: 30px;}
+.font-ux{color:#bc3b3b;}
+.cta-service{background-color: #ffa800; border: none; border-radius: 10px; color: #fff; padding: 10px; margin-top: 50px;}
+.testimony{margin-top: 12%;}
+.testimony .design-2{top: -50px;}
+.testimony .bg-design:first-child{top: -40px; left: -8%; background-color: #f2d1d1;}
+.testimony .bg-design:last-child{top: -20px; left: -3%; background-color: #f2d1d1;}
+.testimony .card,.credibility .card{background-color: #fff; border-radius: 10px; padding: 20px; margin:1% 0%; box-shadow: 2px 3px 5px #9f9f9f; }
+.testimony h2{z-index: 900; position: relative; font-size: 3em;}
+.testimony .card p{margin: 30px 0px; padding: 0 15px; position: relative; z-index: 900;}
+.testimony .card p .guillemet{position: absolute; font-family: sans-serif; top: -40px; left: -5px; font-size: 5em; color: #f3bfc6;}
+.testimony .card h3{font-size: 1.5em; display: inline-block; margin: 10px;}
+.testimony .card img{width: 50px;}
+.swiper{width: 90%;overflow: hidden;margin: 25px 0 50px 0;position: relative;}
+.swiper .itemswrapper{width: 100%;min-width: 1000px; display: flex; margin: auto auto;}
+.swiper-pagination-bullet{background-color: red !important; opacity: 1; width: 15px !important; height: 15px !important;}
+.credibility{position: relative; margin: 8% 0;}
+.credibility .card{margin:1% 0% 5% 5%; box-shadow: 2px 3px 5px #9f9f9f; }
+.credibility .card:hover{transform: scale(1.05); transition: all .5s; background-color: #f8ecec;;}
+.credibility .red-bullet{position: absolute; top: 39%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 90px; height: 90px; border: 16px solid #fde1e1;}
+.credibility h3{color: #cb0101;}
+.credibility h2{font-size: 3em; margin-bottom: 3%;}
+.qTag h3{font-size: 40em;color: red; margin-top: -23% !important;}
+.credibility .bg-design{width: 60px; height: 350px; position: absolute; top: 400px; left: 88%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);transform: rotate(32deg);;z-index: 800;}
+.credibility .bg-design:last-child{width: 60px; height: 350px; position: absolute; top: 500px; left: 89%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);transform: rotate(32deg);z-index: 800;}
+.mission{background: url("../img/wallpaper-2070684_1280.png") no-repeat center;position: relative; background-size: 100% 820px;height: 820px; margin-top: 8%;  color: #fff;}
+.mission .bgrnd{background-color: #990202; opacity: 0.5; position: absolute;top: 0; width: 100%; height: 100%;}
+.mission .content{margin-top: 2%;}
+.mission .content h2{position: relative;padding: 30px 0 30px 0; font-size: 3em;}
+.mission .mission-image{width:50%;}
+.mission img:first-child{margin-top: 15%; padding: 0%; border-radius: 10px; width: 45%;}
+.mission img:last-child{ padding: 0%; border-radius: 10px; box-shadow: -5px 8px 1px 5px #990202dd;}
+
+@media (max-width: 1025px) {
+.banner h1{font-size: 50px; text-align:center; margin}
+div img.empoule{position: absolute;top: -50px; width: 100%; margin-left: -4%; z-index: 999;}
+.achievement .card{margin:5% 3% ; padding: 0px 5px;}
+.service{margin-top: -480px;  width: 100%; padding: 10% 15% 15% 15%; border-radius: 380px;}
+.swiper{width: 90%; border-radius: 10px;}
+.credibility .red-bullet{top: 41%; left: 42%; width: 80px; height: 80px;}
+h2{font-size: 2.3em !important;}
+.credibility h3{font-size: 1.5em !important;}
+.qTag h3{font-size: 40em !important;color: red; margin-top: -33% !important;}
+.credibility .bg-design{width: 60px; height: 350px; position: absolute; top: 440px; left: 88%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);}
+.credibility .bg-design:last-child{width: 60px; height: 350px; position: absolute; top: 540px; left: 90%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);}
+.credibility .bg-design{display: none;}
+.credibility .bg-design:last-child{display: none;}
+}
+@media (max-width:992px){
+#btn-menu{float: right; position: absolute; top: 20px; right: 20px;}
+#menu{display: block;position: fixed;top: -10px;height: 110%;width: 80%;right: -110%;background-color: #fff;box-shadow: 1px 1px 5px #2e2e2e;
+        padding-top: 70px;
+        margin-right: 0px;
+        z-index: 1000;
+        transition: all .4s;
+    }
+    nav .nav li{ padding: 0% !important;}
+    #menu li{
+        width: 100%;
+        display: flex;
+        margin: 10px 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    #menu.navOn{        
+        right: 0%;
+        transition: all .4s;
+    }
+    #btn-menu-close{
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        z-index: 10;
+        background-color: transparent;
+        color: #fff;
+    }
+    .closeNav{
+        display: block;
+        transition: all .4s;
+    }
+    
+    #fondNoir{
+        position: fixed;
+        background-color: #2e2e2eb5;
+        top: -0px;
+        width: 100%;
+        height: 100%;
+        left: -100%;
+        transition: all .4s;   
+    }
+    #fondNoir.fondNoirOn{
+        left: 0%;   
+        transition: all .5s;
+        z-index: 1000;
+    }
+.about .bg-design{height: 300px;top: 500px; left: 80%; width: 50px;}
+@keyframes bounce3 {0% { }50% {top: 470px;}100%{}}
+.service{width: 100%;}
+.service .card{margin:5% 2% 5% 0%; width: 47%; padding: 1% 2% 1% 2%;}
+.credibility .red-bullet{display: none;}
+.qTag1{color: red; font-size: 2em;}
+.qTag{display: none; }
+.mission .descript{position: relative;}
+.mission .mission-image{width:80%;}
+.mission img:first-child{ width: 45%;}
+}
+
+@media (max-width:768px) {
+    h2{font-size: 1.8em !important;}
+    header nav{height: 55px;}
+    .navbar-header{margin-left: -15px;}
+    .logo1{width: 100px; margin: 4px auto;}
+    #btn-menu{top: 10px; right: 15px;}
+    .banner h1{color: #fff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
+    #detail{z-index: 990;margin: 5px 0px 15px 0px; color: #fff; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
+    #cta{z-index: 990;margin: 20px 0px 0px 0px; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}  
+    .banners{height: 100%;}
+    .banner1{height: 140px; position: absolute;bottom: 14%; z-index: 910;}
+    .banner2{height: 140px; position: absolute;bottom: 11.2%; border-radius:0% 0% 100% 100%; z-index: 900;}
+    .banner3{background-color: #ea546b; width: 100%;bottom: 12.5%; left: -0%; border-radius:0% 0% 100% 100%;animation: bounce2 8s infinite; z-index: 900;}
+    .bg-design{width: 45px; height: 500px; border-radius: 50px; position: absolute; top: 120px; transform: rotate(30deg);}
+    .bg-design:first-child{top: 110px; left: -60px; background-color: #700004af;}
+    .bg-design:last-child{top: 105px; left: -15px; background-color: #700004af;}
+    .banner h1{color: #fff; z-index: 990; font-size: 35px; margin-left: 0px; text-align: center;}
+    .about .bg-design{height: 200px;top: 40%; left: 70%; animation: none;}
+    .design-2 .bg-design:first-child{top: 70px; left: -80px; background-color: #700004af;}
+    .design-2 .bg-design:last-child{top: 50px; left: -30px; background-color: #700004af;}
+    @keyframes bounce4 {0% { }50% {left: -70px;}100%{left: -30px;}}
+    @keyframes bounce5 {0% { }50% {left: -25px;}100%{left: -80px;}}
+    .achievement .card img.img-mockup{width: 100%;}
+    .service{margin-top: -480px;  width: 100%; padding: 15% 15% 15% 15%; border-radius: 320px;}
+    .service .card{margin:13% 25px 0% 5%; width: 90%; padding: 1% 4% 3% 4%; z-index: 1000;}
+    .service .card-service h2{font-size: 1.2em !important;}
+    .testimony{margin-top: 14%;}
+    .testimony .card{margin: 0%;}
+    .testimony .bg-design:first-child{top: -10px; left: -125px; background-color: #f2d1d1;}
+    .testimony .bg-design:last-child{top: 5px; left: -75px; background-color: #f2d1d1;}
+    .swiper{width: 95%; border-radius: 10px;}
+    .credibility{margin: 15% 0;}
+    .credibility .card{padding-bottom: 35px;}
+    .credibility h2{margin-bottom: 6%;}
+    .credibility .red-bullet{top: 20.5%; left: 44%;width: 65px; height: 65px; display: block;}
+    .credibility .red-bullet2{position: absolute; top: 47%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}
+    .credibility .red-bullet3{position: absolute; top: 72%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}    
+    .mission .mission-image{width:85%;}
+    .mission img:last-child{ box-shadow: none;}
+}
+/*For Ipad Mini device*/
+@media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
+.banners{height: 65%;}
+.empoule{display: none;}
+.banner1{height: 130px; position: absolute;bottom: 48%;}
+.banner2{height: 130px; position: absolute;bottom: 46.2%;}
+.banner3{bottom: 47%;}
+.banner h1{font-size: 45px; padding-top: 25px;}
+.credibility .red-bullet{top: 200px; left: 41%;width: 110px; height: 110px; display: block; border: 25px solid #fde1e1;}
+}
+@media screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
+    .banners{height: 92%;}
+    .empoule{display: none;}
+    .banner1{height: 150px; position: absolute;bottom: 27%;}
+    .banner2{height: 150px; position: absolute;bottom: 25%;}
+    .banner3{bottom: 26%;}
+    .banner h1{font-size: 45px; padding-top: 25px;}
+    .credibility .red-bullet{top: 200px; left: 41%;width: 110px; height: 110px; display: block; border: 25px solid #fde1e1;}
+    }
+@media (max-width:320px) {
+    .credibility .red-bullet{top: 22%; left: 44%;width: 55px; height: 55px; display: block;}
+    .credibility .red-bullet2{position: absolute; top: 47%;width: 55px; height: 55px;}
+    .credibility .red-bullet3{position: absolute; top: 73%;width: 55px; height: 55px;}
+        }
+@media screen and (min-width:320px) and (max-width:762px) and (orientation: landscape) {
+            .banners{height: 600px;}
+            .empoule{display: none;}
+            .banner1{height: 180px; position: absolute;bottom: -200px;}
+            .banner2{height: 180px; position: absolute;bottom: -200px;}
+            .banner3{bottom: -200px;}
+            .banner h1{font-size: 45px; padding-top: 25px;}
+            
+            }
+
