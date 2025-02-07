@@ -1,6 +1,5 @@
 *{padding: 0;margin: 0;box-sizing: border-box;}
 body{font-family: 'Ubuntu';overflow-x: hidden; background-color: #fde1e1;}
-div{border: 2px solid green;}
 header nav{height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important;}
 p,div{font-size: 15px;}
 nav .nav li{margin-left: 3%; padding: 0% !important;}
