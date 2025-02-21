@@ -1,4 +1,5 @@
 *{padding: 0;margin: 0;box-sizing: border-box;}
+/*div{border: 2px solid green;}*/
 body{font-family: 'Ubuntu';overflow-x: hidden; background-color: #fde1e1;}
 header nav{height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important;}
 p,div{font-size: 15px;}
@@ -92,10 +93,17 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .mission .mission-image{width:50%;}
 .mission img:first-child{margin-top: 15%; padding: 0%; border-radius: 10px; width: 45%;}
 .mission img:last-child{ padding: 0%; border-radius: 10px; box-shadow: -5px 8px 1px 5px #990202dd;}
+#Faq{margin-top: 8%;margin-bottom: 10%;}
+#Faq h2{font-size: 3em; margin: 5% 0; transition: all .3s;}
+#Faq .faq-items{background-color: #ffffff; padding:2px 10px 15px 10px; border-radius: 10px; margin-bottom: 15px; transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);}
+#Faq .faq-items:active{background-color: #eae7e7;}
+ #Faq .faq-items .content{display: none; }
+#Faq .faq-items .glyphicon-minus{display: inline;}
+#Faq .faq-items .glyphicon-plus{color: red; display: none;}
 
 @media (max-width: 1025px) {
-.banner h1{font-size: 50px; text-align:center; margin}
-div img.empoule{position: absolute;top: -50px; width: 100%; margin-left: -4%; z-index: 999;}
+.banner h1{font-size: 50px; text-align:center;}
+div img.empoule{position: absolute; top: -50px; width: 100%; margin-left: -4%; z-index: 999;}
 .achievement .card{margin:5% 3% ; padding: 0px 5px;}
 .service{margin-top: -480px;  width: 100%; padding: 10% 15% 15% 15%; border-radius: 380px;}
 .swiper{width: 90%; border-radius: 10px;}
@@ -162,7 +170,9 @@ h2{font-size: 2.3em !important;}
 .credibility .red-bullet{display: none;}
 .qTag1{color: red; font-size: 2em;}
 .qTag{display: none; }
-.mission .descript{position: relative;}
+.mission{background-size: 100% 850px; height: 850px;}
+.mission #cta{margin-top: 50px; position: relative;}
+.mission .descript{position: relative; margin-bottom: 5%;}
 .mission .mission-image{width:80%;}
 .mission img:first-child{ width: 45%;}
 }
@@ -204,7 +214,9 @@ h2{font-size: 2.3em !important;}
     .credibility .red-bullet{top: 20.5%; left: 44%;width: 65px; height: 65px; display: block;}
     .credibility .red-bullet2{position: absolute; top: 47%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}
     .credibility .red-bullet3{position: absolute; top: 72%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}    
-    .mission .mission-image{width:85%;}
+    .mission .descript{position: relative; margin-bottom: 0% !important;}
+    .mission #cta{margin-top: 30px; position: relative;}
+    .mission .mission-image{width:80%; margin: -10% 0 !important;}
     .mission img:last-child{ box-shadow: none;}
 }
 /*For Ipad Mini device*/
@@ -230,6 +242,9 @@ h2{font-size: 2.3em !important;}
     .credibility .red-bullet{top: 22%; left: 44%;width: 55px; height: 55px; display: block;}
     .credibility .red-bullet2{position: absolute; top: 47%;width: 55px; height: 55px;}
     .credibility .red-bullet3{position: absolute; top: 73%;width: 55px; height: 55px;}
+    .mission .descript{margin-bottom: 5% !important;}
+    .mission #cta{margin: 10px 0; position: relative;}
+    .mission .mission-image{width:130%; margin: 10% 0 10% -33% !important;}
         }
 @media screen and (min-width:320px) and (max-width:762px) and (orientation: landscape) {
             .banners{height: 600px;}

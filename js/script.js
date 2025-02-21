@@ -18,6 +18,7 @@
                 $('#fondNoir').removeClass();          
                 
             });
+          
       
           });
           const swiper = new Swiper(".mySwiper", {
