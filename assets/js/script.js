@@ -18,8 +18,27 @@
                 $('#fondNoir').removeClass();          
                 
             });
-          
-      
+
+          // FAQ section
+            $(document).ready(function(){
+              $('#one').click(function(){
+                     $('.wrapper1').toggleClass('wrapper-one');   
+                   })
+                   $('#two').click(function(){
+                       $('.wrapper2').toggleClass('wrapper-two');
+                     
+                   })
+                   $('#three').click(function(){
+                       $('.wrapper3').toggleClass('wrapper-three');
+                   })
+                   $('#four').click(function(){
+                       $('.wrapper4').toggleClass('wrapper-four');
+                   })
+                   $('#five').click(function(){
+                       $('.wrapper5').toggleClass('wrapper-five');
+                   })
+       
+               })
           });
           const swiper = new Swiper(".mySwiper", {
             speed: 600,
@@ -55,3 +74,19 @@
               },
             },
           });
+         /**
+   * Animation on scroll
+   */
+  window.addEventListener('load', () => {
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    })
+  });
+
+  /**
+   * Initiate Pure Counter 
+   */
+  new PureCounter();

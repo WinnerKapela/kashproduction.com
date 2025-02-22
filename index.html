@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
      <!--Include swiper css file-->
-     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+     <link href="assets/aos/aos.css" rel="stylesheet">
+     <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
+     <link href="assets/glightbox/css/glightbox.min.css" rel="stylesheet">
      <!--link swiper js file-->
-     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/jquery-3.6.4.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/script.js" defer></script>
+     <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery-3.6.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/aos/aos.js"></script>
+    <script src="assets/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/easing/easing.min.js"></script>
+    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
 <body>
@@ -23,7 +32,7 @@
                     <div id="fondNoir"></div>
                     <nav class="navbar navbar-default col-xs-11 col-sm-11 col-md-11 navbar-static-top" role="navigation">
                         <div class="navbar-header">
-                            <a class="navbar-brand" href="#"><img class="logo1" src="img/logoKashProd.png" alt="logo kashProduction"></a>
+                            <a class="navbar-brand" href="#"><img class="logo1" src="assets/img/logoKashProd.png" alt="logo kashProduction"></a>
     
                            
                         </div>
@@ -34,7 +43,7 @@
                             <ul class="nav navbar-nav col-md-7 navbar-right" id="menu">
                                 <div class="visible-xs visible-sm">
                                     <button type="button" class="btn btn-default" id="btn-menu-close">
-                                        <i class="glyphicon glyphicon-remove" style="color:red;"></i>
+                                        <i class="glyphicon glyphicon-remove"></i>
                                     </button>
                                 </div>
                                 <li class="col-md-0 text-center"><a href="#" class="menu active">Accueil</a></li>
@@ -53,7 +62,7 @@
                         <div class="banner2 "></div>
                         <div class="banner3 "></div>
                         <div class="banners "></div>
-                        <div class="hidden-xs col-sm-6 col-sm-push-6 col-md-5 col-md-push-6"><img class="img-responsive empoule" src="img/creative-bulb-with-paint-colors-generative-ai.png" alt=""></div>
+                        <div class="hidden-xs col-sm-6 col-sm-push-6 col-md-5 col-md-push-6"><img class="img-responsive empoule" src="assets/img/creative-bulb-with-paint-colors-generative-ai.png" alt=""></div>
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-10 titre">
@@ -77,11 +86,11 @@
         </div>
     </div>
     <div class="container-fluid">
-        <div class="row about">
+        <div class="row about" data-aos="fade-up">
             <div class="banner4 col-md-12 col-sm-12">
                 <div class="illustration">
                     <div class="col-sm-10 col-sm-offset-1 col-md-4 illustr">
-                        <img src="img/WorkTeam1.png" class="col-sm-offset-2 col-md-offset-0 img-illustr img-responsive" alt="Illustration equipe">
+                        <img src="assets/img/WorkTeam1.png" class="col-sm-offset-2 col-md-offset-0 img-illustr img-responsive" alt="Illustration equipe">
                     </div>
                     
                 </div>
@@ -114,12 +123,12 @@
         <div>
             <div class="row">
                 <div>
-                    <div class="portfolio col-md-12">
+                    <div class="portfolio col-md-12" data-aos="fade-up">
                         <div class="design-2">
                             <div class="bg-design"></div>
                             <div class="bg-design"></div>
                         </div>
-                        <div><img src="img/pen-tool2.png" class="pull-right font-tool" alt="pen tool"></div>
+                        <div><img src="assets/img/pen-tool2.png" class="pull-right font-tool" alt="pen tool"></div>
                         <div class="col-md-6 col-md-offset-3">
                             <h2 class="text-center">Nous faisons de vos idées des réalisatios concrètes</h2>
                             <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum 
@@ -129,34 +138,34 @@
                         <div class="col-md-12 achievement">
                             <div class="items col-sm-12 col-sm-offset-0 col-md-11 col-md-offset-1">
                                 <div class="col-xs-5 col-sm-2 col-md-2 col-md-offset-1 col-md-offset-0 card">
-                                    <img src="img/logo1.jpg" alt="">
+                                    <img src="assets/img/logo1.jpg" alt="">
                                     <div class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
                                 </div>
                                 <div class="col-xs-5 col-sm-2 col-md-2 card">
-                                    <img src="img/logo2.jpg" alt="">
+                                    <img src="assets/img/logo2.jpg" alt="">
                                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                 <div class="col-xs-5 col-sm-2 col-md-2 card">
-                                    <img src="img/logo3.jpg" alt="">
+                                    <img src="assets/img/logo3.jpg" alt="">
                                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                                 <div class="col-xs-5 col-sm-2 col-md-2 card">
-                                    <img src="img/logo2.jpg" alt="">
+                                    <img src="assets/img/logo2.jpg" alt="">
                                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="items col-md-11 col-md-offset-1">
                                     <div class="col-xs-11 col-xs-offset-1 col-sm-5 col-md-2 card">
-                                        <img src="img/photo.jpg" alt="">
+                                        <img src="assets/img/photo.jpg" alt="">
                                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                     <div class="col-xs-11 col-xs-offset-1 col-sm-5 col-md-2 card">
-                                        <img src="img/photo.jpg" alt="">
+                                        <img src="assets/img/photo.jpg" alt="">
                                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                     <div class="col-md-5 card">
-                                        <img src="img/maquette web2.jpg" class="img-mockup img-responsive" alt="">
+                                        <img src="assets/img/maquette web2.jpg" class="img-mockup img-responsive" alt="">
                                         <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                                     </div>
                                 </div>
@@ -174,33 +183,33 @@
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, beatae?</p>
                     <div class="card-service">
                         
-                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card">
-                            <h3><span><img src="img/graphic-design.png" class="card-img" alt=""></span> Design Graphique</h3>
+                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card" data-aos="fade-right">
+                            <h3><span><img src="assets/img/graphic-design.png" class="card-img" alt=""></span> Design Graphique</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                 esse dolores optio est vel voluptatibus odio nihil?</p>
                         </div>
-                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card">
-                            <h3><span><img src="img/camera.png" class="card-img" alt=""></span> Photographie</h3>
+                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card" data-aos="fade-left">
+                            <h3><span><img src="assets/img/camera.png" class="card-img" alt=""></span> Photographie</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                 esse dolores optio est vel voluptatibus odio nihil?</p>
                         </div>
-                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card">
-                            <h3><span><img src="img/world-wide-web.png" class="card-img" alt=""></span> Développement Web</h3>
+                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card" data-aos="fade-left">
+                            <h3><span><img src="assets/img/world-wide-web.png" class="card-img" alt=""></span> Développement Web</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                 esse dolores optio est vel voluptatibus odio nihil?</p>
                         </div>
-                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card">
-                            <h3><span><img src="img/ux-ui.png" class="card-img" alt=""></span> Ux/Ui Design</h3>
+                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card" data-aos="fade-right">
+                            <h3><span><img src="assets/img/ux-ui.png" class="card-img" alt=""></span> Web Design</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                 esse dolores optio est vel voluptatibus odio nihil?</p>
                         </div>
-                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card">
-                            <h3><span><img src="img/partager2.png" class="card-img" alt=""></span> Commuication Digitale</h3>
+                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card" data-aos="fade-left">
+                            <h3><span><img src="assets/img/partager2.png" class="card-img" alt=""></span> Commuication Digitale</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                 esse dolores optio est vel voluptatibus odio nihil?</p>
                         </div>
-                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card">
-                            <h3><span><img src="img/camera.png" class="card-img" alt=""></span> Formation au digital</h3>
+                        <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-4 card" data-aos="fade-left">
+                            <h3><span><img src="assets/img/camera.png" class="card-img" alt=""></span> Formation au digital</h3>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                 esse dolores optio est vel voluptatibus odio nihil?</p>
                         </div>
@@ -212,7 +221,7 @@
         </div>
             </div>
             <div class="row">
-                <div class="col-md-12 testimony">
+                <div class="col-md-12 testimony" data-aos="fade-up">
                     <div class="desing-2">
                         <div class="bg-design"></div>
                         <div class="bg-design"></div>
@@ -224,27 +233,27 @@
                         <div class="swiper mySwiper">
                             <div class="itemswrapper swiper-wrapper">
                                 <div class="swiper-slide col-xs-4 col-xs-pull- col-sm-5 col-sm-push-0 col-md-3 card">
-                                    <div><img src="img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
+                                    <div><img src="assets/img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
                                         <p class="text-justify"><span class="guillemet">"</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                         esse dolores optio est vel voluptatibus odio nihil?</p>
                                 </div>
                
                             
                                 <div class="swiper-slide col-xs-4 col-xs-pull- col-sm-5 col-sm-push-0 col-md-3 card">
-                                    <div><img src="img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
+                                    <div><img src="assets/img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
                                         <p class="text-justify"><span class="guillemet">"</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                         esse dolores optio est vel voluptatibus odio nihil?</p>
                                 </div>
     
                                     <div class="swiper-slide col-xs-4 col-xs-pull- col-sm-5 col-sm-push-0 col-md-3 card">
-                                        <div><img src="img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
+                                        <div><img src="assets/img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
                                             <p class="text-justify"><span class="guillemet">"</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                             esse dolores optio est vel voluptatibus odio nihil?</p>
                                     </div>
                    
                                 
                                     <div class="swiper-slide col-xs-4 col-xs-pull- col-sm-5 col-sm-push-0 col-md-3 card">
-                                        <div><img src="img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
+                                        <div><img src="assets/img/utilisateur (1).png" class="img-user" alt=""><h3> Nom Client</h3></div>
                                             <p class="text-justify"><span class="guillemet">"</span> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores maxime nulla tempore
                                             esse dolores optio est vel voluptatibus odio nihil?</p>
                                     </div>
@@ -257,7 +266,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12 credibility">
+                <div class="col-md-12 credibility" data-aos="fade-up">
                     <h2 class="text-center">Pourquoi nous choisir parmis tant d'autres <span class="qTag1">?</span></h2>
                     <div class="col-md-7">
                         <div class="col-xs-pull- col-sm-5 col-sm-push-0 col-md-5 card">
@@ -293,7 +302,7 @@
             </div>
         </div>
         <div class="row">            
-            <div class="mission">
+            <div class="mission" data-aos="fade-up">
                 <div class="bgrnd"></div>
                 <div class="col-md-12 content">
                     <h2 class="col-md-8 col-md-offset-2 text-center">Kash Production est bien plus qu'une entreprise de Commuication !</h2>
@@ -310,8 +319,8 @@
                     </div>
                     <div class="col-xs col-md-6 mission-image">
                         <div class="col-sm-10 col-sm-offset-2 col-md-12">
-                            <img src="img/Collaboration.jpg" class="hidden-xs col-xs-push-0 col-sm-7 col-sm-push-1 col-md-6 col-md-push-1 img-responsive" alt="">
-                            <img src="img/Collaboration.jpg" class="col-xs-8 col-xs-push-4 col-sm-push-0 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 img-responsive" alt="">
+                            <img src="assets/img/Collaboration.jpg" class="hidden-xs col-xs-push-0 col-sm-7 col-sm-push-1 col-md-6 col-md-push-1 img-responsive" alt="">
+                            <img src="assets/img/Collaboration.jpg" class="col-xs-8 col-xs-push-4 col-sm-push-0 col-sm-6 col-sm-offset-0 col-md-6 col-md-offset-0 img-responsive" alt="">
                         </div>
                         
                     </div>
@@ -320,53 +329,55 @@
             </div>
         </div>
         <div class="row">
-            <div id="Faq" class="col-md-8 col-md-offset-2">
+            <div id="Faq" class="col-md-8 col-md-offset-2" data-aos="fade-up">
                 <h2 class="text-center">FAQ</h2>
-                <div class="faq-items one"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-minus pull-right"></span><span class="glyphicon glyphicon-plus pull-right"></span></h3>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
-                        repudiandae, nemo 
-                        debitis corporis ducimus voluptas!
-                    </p> 
+                <div class="wrapper1">
+                    <div id="one" class="faq-items"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-chevron-right pull-right"></span></h3>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
+                            repudiandae, nemo 
+                            debitis corporis ducimus voluptas!
+                        </p> 
+                    </div>
                 </div>
-                <div class="faq-items two"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-minus pull-right"></span><span class="glyphicon glyphicon-plus pull-right"></span></h3>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
-                        repudiandae, nemo 
-                        debitis corporis ducimus voluptas!
-                    </p>
+
+                <div class="wrapper2">
+                    <div id="two" class="faq-items"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-chevron-right pull-right"></span></h3>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
+                            repudiandae, nemo 
+                            debitis corporis ducimus voluptas!
+                        </p>
+                    </div>
                 </div>
-                <div class="faq-items three"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-minus pull-right"></span><span class="glyphicon glyphicon-plus pull-right"></span></h3>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
-                        repudiandae, nemo 
-                        debitis corporis ducimus voluptas!
-                    </p>
+
+                <div class="wrapper3">
+                    <div id="three" class="faq-items"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-chevron-right pull-right"></span></h3>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
+                            repudiandae, nemo 
+                            debitis corporis ducimus voluptas!
+                        </p>
+                    </div>
                 </div>
-                <div class="faq-items four"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-minus pull-right"></span><span class="glyphicon glyphicon-plus pull-right"></span></h3>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
-                        repudiandae, nemo 
-                        debitis corporis ducimus voluptas!
-                    </p>
+                <div class="wrapper4">
+                    <div id="four" class="faq-items"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-chevron-right pull-right"></span></h3>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
+                            repudiandae, nemo 
+                            debitis corporis ducimus voluptas!
+                        </p>
+                    </div>
                 </div>
-                <div class="faq-items faqItems five"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-minus pull-right"></span><span class="glyphicon glyphicon-plus pull-right"></span></h3>
-                    <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
-                        repudiandae, nemo 
-                        debitis corporis ducimus voluptas!
-                    </p>
+
+                <div class="wrapper5">
+                    <div id="five" class="faq-items faqItems"><h3>Lorem ipsum dolor sit ? <span class="glyphicon glyphicon-chevron-right pull-right"></span></h3>
+                        <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, qui? Magnam, nemo! Minus ipsa reprehenderit alias 
+                            repudiandae, nemo 
+                            debitis corporis ducimus voluptas!
+                        </p>
+                    </div>
                 </div>
+               
             </div>
         </div>
         
     </div>
-<script>
-      $(document).ready(function(){
-       $('.faq-items.one').click(function(){
-              $('.faq-items.one .content').slideToggle();
-              $('.faq-items.one .glyphicon-minus').hide();
-                $('.faq-items.one .glyphicon-plus').show();
-                
-             
-            })
-        })
-         
-</script>
 </body>
 </html>

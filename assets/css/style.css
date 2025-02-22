@@ -1,7 +1,7 @@
 *{padding: 0;margin: 0;box-sizing: border-box;}
 /*div{border: 2px solid green;}*/
 body{font-family: 'Ubuntu';overflow-x: hidden; background-color: #fde1e1;}
-header nav{height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important;}
+header nav{height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important; z-index: 998 !important;}
 p,div{font-size: 15px;}
 nav .nav li{margin-left: 3%; padding: 0% !important;}
 nav .nav li .menu{padding: 10px !important; color: #232323; font-size: 14px; font-weight: 400 !important;}
@@ -56,7 +56,7 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .achievement .card img.img-mockup{width: 95%; border-radius: 10px;}
 .achievement .card{margin:2% 3% ; padding: 0px 5px;}
 .cta-link a{color: #efa002; text-decoration: underline;}
-.service{background-color: #151515; color: #fff; margin-top: -550px;  width: 100%; padding: 5% 15% 15% 15%; border-radius: 43%; z-index: 1000;}
+.service{background-color: #151515; color: #fff; margin-top: -550px;  width: 100%; padding: 5% 15% 15% 15%; border-radius: 43%; z-index: 990;}
 .service h2{font-size: 3em;}
 .service .card-service h3{font-size: 1.3em;}
 .service .card{background-color: #1d1d1d; margin:2% 2.2% 2% 1%; width: 30%; padding: 1% 2% 3% 2%; border-radius: 10px;}
@@ -95,11 +95,32 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .mission img:last-child{ padding: 0%; border-radius: 10px; box-shadow: -5px 8px 1px 5px #990202dd;}
 #Faq{margin-top: 8%;margin-bottom: 10%;}
 #Faq h2{font-size: 3em; margin: 5% 0; transition: all .3s;}
-#Faq .faq-items{background-color: #ffffff; padding:2px 10px 15px 10px; border-radius: 10px; margin-bottom: 15px; transition: all cubic-bezier(0.455, 0.03, 0.515, 0.955);}
+#Faq .faq-items{background-color: #ffffff; padding:2px 10px 15px 10px; border-radius: 10px; margin-bottom: 15px; transition: all .8s; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23); cursor: pointer;}
 #Faq .faq-items:active{background-color: #eae7e7;}
- #Faq .faq-items .content{display: none; }
-#Faq .faq-items .glyphicon-minus{display: inline;}
-#Faq .faq-items .glyphicon-plus{color: red; display: none;}
+#Faq .wrapper1 #one .content{display: none;}
+#Faq .wrapper2 #two .content{display: none;}
+#Faq .wrapper3 #three .content{display: none;}
+#Faq .wrapper4 #four .content{display: none;}
+#Faq .wrapper5 #five .content{display: none;}
+#Faq .wrapper1.wrapper-one #one .content{display: block; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23);}
+#Faq .wrapper2.wrapper-two #two .content{display: block; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23);}
+#Faq .wrapper3.wrapper-three #three .content{display: block; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23);}
+#Faq .wrapper4.wrapper-four #four .content{display: block; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23);}
+#Faq .wrapper5.wrapper-five #five .content{display: block; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23);}
+#Faq .wrapper1.wrapper-one #one h3,.wrapper2.wrapper-two #two h3,.wrapper3.wrapper-three #three h3,
+.wrapper4.wrapper-four #four h3, .wrapper5.wrapper-five #five h3 {color: red;}
+#Faq  #two .content{display: block; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23);}
+#Faq .wrapper1.wrapper-one #one .glyphicon-chevron-right{transform: rotate(90deg);}
+#Faq .wrapper2.wrapper-two #two .glyphicon-chevron-right{transform: rotate(90deg);}
+#Faq .wrapper3.wrapper-three #three .glyphicon-chevron-right{transform: rotate(90deg);}
+#Faq .wrapper4.wrapper-four #four .glyphicon-chevron-right{transform: rotate(90deg);}
+#Faq .wrapper5.wrapper-five #five .glyphicon-chevron-right{transform: rotate(90deg);}
+
+@keyframes toggle {
+    from{
+      transform: translateY(-2px);
+    }
+   }
 
 @media (max-width: 1025px) {
 .banner h1{font-size: 50px; text-align:center;}
@@ -117,11 +138,13 @@ h2{font-size: 2.3em !important;}
 .credibility .bg-design:last-child{display: none;}
 }
 @media (max-width:992px){
-#btn-menu{float: right; position: absolute; top: 20px; right: 20px;}
+#btn-menu{float: right; position: absolute; top: 20px; right: 20px; border-radius: 50%;
+    width: 35px;
+    height: 35px;}
 #menu{display: block;position: fixed;top: -10px;height: 110%;width: 80%;right: -110%;background-color: #fff;box-shadow: 1px 1px 5px #2e2e2e;
         padding-top: 70px;
         margin-right: 0px;
-        z-index: 1000;
+        z-index: 1200 !important;
         transition: all .4s;
     }
     nav .nav li{ padding: 0% !important;}
@@ -131,18 +154,25 @@ h2{font-size: 2.3em !important;}
         margin: 10px 10px;
         justify-content: center;
         align-items: center;
+        
     }
     #menu.navOn{        
         right: 0%;
         transition: all .4s;
+        z-index: 1200 !important;
     }
     #btn-menu-close{
         position: absolute;
         top: 30px;
         right: 20px;
         z-index: 10;
-        background-color: transparent;
-        color: #fff;
+        background-color: #ebebeb;
+        color: #151515;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
     }
     .closeNav{
         display: block;
@@ -157,11 +187,11 @@ h2{font-size: 2.3em !important;}
         height: 100%;
         left: -100%;
         transition: all .4s;   
+        z-index: 998;
     }
     #fondNoir.fondNoirOn{
         left: 0%;   
         transition: all .5s;
-        z-index: 1000;
     }
 .about .bg-design{height: 300px;top: 500px; left: 80%; width: 50px;}
 @keyframes bounce3 {0% { }50% {top: 470px;}100%{}}
@@ -182,7 +212,7 @@ h2{font-size: 2.3em !important;}
     header nav{height: 55px;}
     .navbar-header{margin-left: -15px;}
     .logo1{width: 100px; margin: 4px auto;}
-    #btn-menu{top: 10px; right: 15px;}
+    #btn-menu{top: 10px; right: 15px; border: none; background-color:#ffd2d2 ; outline: none;}
     .banner h1{color: #fff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
     #detail{z-index: 990;margin: 5px 0px 15px 0px; color: #fff; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
     #cta{z-index: 990;margin: 20px 0px 0px 0px; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}  
@@ -202,6 +232,7 @@ h2{font-size: 2.3em !important;}
     .achievement .card img.img-mockup{width: 100%;}
     .service{margin-top: -480px;  width: 100%; padding: 15% 15% 15% 15%; border-radius: 320px;}
     .service .card{margin:13% 25px 0% 5%; width: 90%; padding: 1% 4% 3% 4%; z-index: 1000;}
+    .service .card h3{text-align: center;}
     .service .card-service h2{font-size: 1.2em !important;}
     .testimony{margin-top: 14%;}
     .testimony .card{margin: 0%;}
