@@ -122,6 +122,17 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
     }
    }
 
+.footer{background-color: #131313; color: #fff; padding: 60px 10px 0px 10px;}
+.footer .part1 span{font-size: 25px; font-weight: 500; margin: 10px;}
+.footer .part1 p{margin: 15px 0px;}
+.footer img{width: 50px;border-radius: 10px;}
+.footer li{list-style-type: none;}
+.footer a{color: #fff; text-decoration: underline;}
+footer .bottom{background-color: #000; padding: 20px;margin-top: 25px; height: 100px;}
+footer .bottom .copyright h5{display: flex; width: 80%;justify-content: center; margin: auto auto;}
+footer .bottom .link-medias{margin-right: 20px;}
+footer .bottom div a{margin:0px 10px;}
+footer .bottom div a i{font-size: 30px; background-color: #2e2e2e; border-radius: 8px; padding: 5px;}
 @media (max-width: 1025px) {
 .banner h1{font-size: 50px; text-align:center;}
 div img.empoule{position: absolute; top: -50px; width: 100%; margin-left: -4%; z-index: 999;}
@@ -249,6 +260,9 @@ h2{font-size: 2.3em !important;}
     .mission #cta{margin-top: 30px; position: relative;}
     .mission .mission-image{width:80%; margin: -10% 0 !important;}
     .mission img:last-child{ box-shadow: none;}
+    #Faq h3{font-size: 1em !important;}
+    footer .bottom .link-medias{margin: 15px auto auto auto;}
+    footer .bottom .link-medias i{font-size: 25px;}
 }
 /*For Ipad Mini device*/
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait) {
