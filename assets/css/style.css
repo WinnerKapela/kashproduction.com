@@ -61,7 +61,7 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .service .card-service h3{font-size: 1.3em;}
 .service .card{background-color: #1d1d1d; margin:2% 2.2% 2% 1%; width: 30%; padding: 1% 2% 3% 2%; border-radius: 10px;}
 .service .card:hover{background-color: #2b2a2a; cursor: pointer;transition: all .4s; transform: scale(1.1);}
-.service .card-img{width: 30px;}
+.service .card-img, .service .bx{width: 30px; font-size: 30px;color:#d53939;}
 .font-ux{color:#bc3b3b;}
 .cta-service{background-color: #ffa800; border: none; border-radius: 10px; color: #fff; padding: 10px; margin-top: 50px;}
 .testimony{margin-top: 12%;}
