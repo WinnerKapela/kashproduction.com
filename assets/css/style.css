@@ -45,6 +45,7 @@ div img.empoule{position: absolute;top: -50px; width: 100%; z-index: 999;}
 @keyframes bounce3 {0% { }50% {top: -90px;}100%{}}
 .row .portfolio{background-color: #b70000; color: #fff; margin: 8% 0%;  padding: 0 0 500px 0; z-index: 900;}
 .row .portfolio h2{font-size: 3em; padding-top: 50px;}
+.swiper2 .card img{box-shadow: 2px 3px 5px #9f9f9f;}
 .design-2 .bg-design:first-child{top: 70px; left: -30px; background-color: #700004af; ;animation: bounce5 8s infinite;}
 .design-2 .bg-design:last-child{top: 50px; left: 65px; background-color: #700004af; ;animation: bounce4 8s infinite;}
 @keyframes bounce4 {0% { }50% {left: 30px;}100%{}}
@@ -77,7 +78,7 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .swiper{width: 90%;overflow: hidden;margin: 25px 0 50px 0;position: relative;}
 .swiper .itemswrapper{width: 100%;min-width: 1000px; display: flex; margin: auto auto;}
 .swiper-pagination-bullet{background-color: red !important; opacity: 1; width: 15px !important; height: 15px !important;}
-.credibility{position: relative; margin: 8% 0;}
+.credibility{position: relative; margin: 10% 0;}
 .credibility .card{margin:1% 0% 5% 5%; box-shadow: 2px 3px 5px #9f9f9f; }
 .credibility .card:hover{transform: scale(1.05); transition: all .5s; background-color: #f8ecec;;}
 .credibility .red-bullet{position: absolute; top: 39%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 90px; height: 90px; border: 16px solid #fde1e1;}
@@ -86,6 +87,14 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .qTag h3{font-size: 40em;color: red; margin-top: -23% !important;}
 .credibility .bg-design{width: 60px; height: 350px; position: absolute; top: 400px; left: 88%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);transform: rotate(32deg);;z-index: 800;}
 .credibility .bg-design:last-child{width: 60px; height: 350px; position: absolute; top: 500px; left: 89%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);transform: rotate(32deg);z-index: 800;}
+.branding {margin: 50px 0px;}
+.branding .response{color: red; font-size: 4em; font-weight: bold;}
+.branding .qtag{color: red; font-weight: bold; font-size: inherit;}
+.branding .qst{color: rgb(88, 88, 88); font-size: 4em; font-weight: 500;}
+.branding .hook{margin-bottom: 50px;}
+.branding img{border-radius: 15px; box-shadow: 2px 3px 5px #9f9f9f;}
+.branding #cta{margin: 30px 0px !important;}
+.branding #cta a{background-color: #ffa800; border: none;}
 .mission{background: url("../img/wallpaper-2070684_1280.png") no-repeat center;position: relative; background-size: 100% 820px;height: 820px; margin-top: 8%;  color: #fff;}
 .mission .bgrnd{background-color: #990202; opacity: 0.5; position: absolute;top: 0; width: 100%; height: 100%;}
 .mission .content{margin-top: 2%;}
@@ -139,7 +148,7 @@ div img.empoule{position: absolute; top: -50px; width: 100%; margin-left: -4%; z
 .achievement .card{margin:5% 3% ; padding: 0px 5px;}
 .service{margin-top: -480px;  width: 100%; padding: 10% 15% 15% 15%; border-radius: 380px;}
 .swiper{width: 90%; border-radius: 10px;}
-.credibility .red-bullet{top: 41%; left: 42%; width: 80px; height: 80px;}
+.credibility .red-bullet{top: 50%; left: 42%; width: 80px; height: 80px;}
 h2{font-size: 2.3em !important;}
 .credibility h3{font-size: 1.5em !important;}
 .qTag h3{font-size: 40em !important;color: red; margin-top: -33% !important;}
@@ -147,6 +156,7 @@ h2{font-size: 2.3em !important;}
 .credibility .bg-design:last-child{width: 60px; height: 350px; position: absolute; top: 540px; left: 90%; background:linear-gradient(45deg, #f2d1d1,#fde1e1);}
 .credibility .bg-design{display: none;}
 .credibility .bg-design:last-child{display: none;}
+.branding .hook{font-size: 0.8em;}
 }
 @media (max-width:992px){
 #btn-menu{float: right; position: absolute; top: 20px; right: 20px; border-radius: 50%;
@@ -208,9 +218,10 @@ h2{font-size: 2.3em !important;}
 @keyframes bounce3 {0% { }50% {top: 470px;}100%{}}
 .service{width: 100%;}
 .service .card{margin:5% 2% 5% 0%; width: 47%; padding: 1% 2% 1% 2%;}
-.credibility .red-bullet{display: none;}
+
 .qTag1{color: red; font-size: 2em;}
 .qTag{display: none; }
+.credibility .red-bullet{display: none !important;}
 .mission{background-size: 100% 850px; height: 850px;}
 .mission #cta{margin-top: 50px; position: relative;}
 .mission .descript{position: relative; margin-bottom: 5%;}
@@ -253,9 +264,10 @@ h2{font-size: 2.3em !important;}
     .credibility{margin: 15% 0;}
     .credibility .card{padding-bottom: 35px;}
     .credibility h2{margin-bottom: 6%;}
-    .credibility .red-bullet{top: 20.5%; left: 44%;width: 65px; height: 65px; display: block;}
+    .credibility .red-bullet{top: 20.5%; left: 44%;width: 65px; height: 65px; display: block !important;}
     .credibility .red-bullet2{position: absolute; top: 47%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}
     .credibility .red-bullet3{position: absolute; top: 72%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}    
+    .branding .hook{font-size: 0.5em;}
     .mission .descript{position: relative; margin-bottom: 0% !important;}
     .mission #cta{margin-top: 30px; position: relative;}
     .mission .mission-image{width:80%; margin: -10% 0 !important;}

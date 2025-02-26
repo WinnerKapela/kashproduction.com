@@ -41,6 +41,7 @@
                })
           });
           const swiper = new Swiper(".mySwiper", {
+      
             speed: 600,
             loop: true,
             autoplay: {
@@ -73,6 +74,41 @@
                 slidesPerView: 3,
               },
             },
+          });
+
+          const swiper2 = new Swiper(".mySwiper2", {
+            effect : "cards",
+            speed: 600,
+            loop: true,
+            
+            slidesPerView: 3,
+            spaceBetween: 25,
+            centerSlide:'true',
+            grabCursor:'true',
+            fade:'true',
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+              dynamicBullets:true
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints:{
+              0: {
+                slidesPerView: 1,
+              },
+              768: {
+                slidesPerView: 2,
+              },
+              950: {
+                slidesPerView: 3,
+              },
+            },
+
+            
           });
          /**
    * Animation on scroll
