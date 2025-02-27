@@ -1,20 +1,44 @@
 *{padding: 0;margin: 0;box-sizing: border-box;}
-/*div{border: 2px solid green;}*/
-body{font-family: 'Ubuntu';overflow-x: hidden; background-color: #fde1e1;}
-header nav{height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important; z-index: 998 !important;}
-p,div{font-size: 15px;}
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: #fff;
+    box-shadow: 0px 2px 5px 3px #b0b0b0;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 15px;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s ease-in-out;
+    z-index: 1200;
+  }
+  
+  .back-to-top i {
+     font-size: 1em;
+     color: red;
+  }
+  
+  .back-to-top:hover {
+    background: #e3e3e3;
+  }
+/*div{border: 1px solid green;}*/
+body{font-family: 'Ubuntu'; overflow-x: hidden; background-color: #fde1e1; transition: all 0.5s ease-in-out;}
+header nav{position: fixed !important; height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important; z-index: 998 !important;
+    transition: top .3s;}
+#navigation.header-scrolled {background-color: #fff !important; box-shadow: 0px 1px 10px 0px #898989; transition: all 0.5s;}
 nav .nav li{margin-left: 3%; padding: 0% !important;}
 nav .nav li .menu{padding: 10px !important; color: #232323; font-size: 14px; font-weight: 400 !important;}
-nav .nav li .menu:hover{color: #232323; background-color: #ffd9dd !important; border-radius: 8px;}
+nav .nav li .menu:hover{color: #232323; background-color: #ffd9dd !important; border-radius: 8px; transition: background 0.5s ease-in-out;}
 nav .nav li .menu.active{color: #232323; font-weight: 600 !important;}
 nav .nav li .menu.active:hover{background: none !important;}
 nav .nav li:nth-child(4){margin-right: 7%;}
 .contact #a-contact{background-color: #ffa800; border-radius: 8px; color: #fff !important; font-weight: 400;}
-.contact #a-contact:hover{background-color: #efa002 !important; border-radius: 8px; color: #fff !important; font-weight: 500;}
-
+.contact #a-contact:hover{background-color: #efa002 !important; border-radius: 8px; color: #fff !important; font-weight: 500;transition:all 0.5s ease-in-out;}
+.contact #a-contact:active{background-color: #efa002 !important;transition:all 0.5s ease-in-out;}
 .navbar-header{margin-top: -20px;}
 .logo1{width: 170px;}
-
+.titre{margin-top: 70px;}
 .banners{background-color:#b70000; width: 100%; height: 765px; position: absolute;top:-218px; left: -0%; z-index: 900;}
 .banner1{background: linear-gradient(180deg, #b70000,rgb(84, 1, 1)); width: 100%; height: 160px; position: absolute;bottom: 40px; left: -0%; border-radius:0% 0% 100% 100%; animation: bounce 8s infinite; z-index: 910;}
 .banner2{background-color: #f18a98; width: 100%; height: 140px; position: absolute;bottom: 18px; left: -0%; border-radius:0% 0% 100% 100%; z-index: 980;animation: bounce 8s infinite; z-index: 900;}
@@ -24,7 +48,7 @@ nav .nav li:nth-child(4){margin-right: 7%;}
 .bg-design{width: 4.5%; height: 500px; border-radius: 50px; position: absolute; top: 120px; transform: rotate(30deg);}
 .bg-design:first-child{top: 115px; left: -2%; background-color: #700004af;}
 .bg-design:last-child{top: 110px; left: 1.5%; background-color: #700004af;}
-div img.empoule{position: absolute;top: -50px; width: 100%; z-index: 999;}
+div img.empoule{position: absolute;top: 70px; width: 100%; z-index: 990;}
 
 
 .titre p{ z-index: 1000;}
@@ -53,15 +77,15 @@ div img.empoule{position: absolute;top: -50px; width: 100%; z-index: 999;}
 div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .achievement{margin: 65px 0 40px 0;}
 .achievement .card img{width: 100%; border-radius: 10px; box-shadow: 2px 3px 8px #503737;margin-bottom: 10px;}
-.achievement .card img:hover{cursor: pointer;transition: all .4s; transform: scale(1.1);}
+.achievement .card img:hover{cursor: pointer;transition: all .4s; transform: scale(1.03);}
 .achievement .card img.img-mockup{width: 95%; border-radius: 10px;}
 .achievement .card{margin:2% 3% ; padding: 0px 5px;}
 .cta-link a{color: #efa002; text-decoration: underline;}
 .service{background-color: #151515; color: #fff; margin-top: -550px;overflow: hidden;  width: 100%; padding: 5% 15% 15% 15%; border-radius: 43%; z-index: 990;}
 .service h2{font-size: 3em;}
 .service .card-service h3{font-size: 1.3em;}
-.service .card{background-color: #1d1d1d; margin:2% 2.2% 2% 1%; width: 30%; padding: 1% 2% 3% 2%; border-radius: 10px;}
-.service .card:hover{background-color: #2b2a2a; cursor: pointer;transition: all .4s; transform: scale(1.1);}
+.service .card{background-color: #2b2a2a; margin:2% 2.2% 2% 1%; width: 30%; padding: 1% 2% 3% 2%; border-radius: 10px;}
+.service .card:hover{background-color: #3a3a3a; cursor: pointer;transition: background 0.5s ease-in-out; transform: scale(1.1);}
 .service .card-img, .service .bx{width: 30px; font-size: 30px;color:#d53939;}
 .font-ux{color:#bc3b3b;}
 .cta-service{background-color: #ffa800; border: none; border-radius: 10px; color: #fff; padding: 10px; margin-top: 50px;}
@@ -91,17 +115,22 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .branding .response{color: red; font-size: 4em; font-weight: bold;}
 .branding .qtag{color: red; font-weight: bold; font-size: inherit;}
 .branding .qst{color: rgb(88, 88, 88); font-size: 4em; font-weight: 500;}
-.branding .hook{margin-bottom: 50px;}
+.branding .hook{margin-bottom: 50px;margin-left: 0px;}
 .branding img{border-radius: 15px; box-shadow: 2px 3px 5px #9f9f9f;}
-.branding #cta{margin: 30px 0px !important;}
-.branding #cta a{background-color: #ffa800; border: none;}
+.branding #cta, .service-reminder #cta{margin: 30px 0px !important;}
+.branding #cta a, .service-reminder #cta a{background-color: #ffa800; border: none;}
 .mission{background: url("../img/wallpaper-2070684_1280.png") no-repeat center;position: relative; background-size: 100% 820px;height: 820px; margin-top: 8%;  color: #fff;}
 .mission .bgrnd{background-color: #990202; opacity: 0.5; position: absolute;top: 0; width: 100%; height: 100%;}
 .mission .content{margin-top: 2%;}
 .mission .content h2{position: relative;padding: 30px 0 30px 0; font-size: 3em;}
-.mission .mission-image{width:50%;}
-.mission img:first-child{margin-top: 15%; padding: 0%; border-radius: 10px; width: 45%;}
-.mission img:last-child{ padding: 0%; border-radius: 10px; box-shadow: -5px 8px 1px 5px #990202dd;}
+.mission .mission-image img{border-radius: 10px !important; width: 100%; padding: 0;}
+
+.service-reminder{margin: 120px 0px 40px 0px;}
+.service-reminder img{width: 100%; border-radius: 15px;}
+.service-reminder .offre{margin-top: 5%; background-color: #fff; padding: 10px; margin-right: 15px; border-radius: 15px; box-shadow: 2px 3px 10px #9f9f9f;}
+.service-reminder .offre:hover{transform: scale(1.05); cursor: pointer;transition: all .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);}
+.service-reminder #cta a{background: linear-gradient(90deg, #ffa800,#ff5500);}
+#Faq{margin-top: 8%;margin-bottom: 10%;}
 #Faq{margin-top: 8%;margin-bottom: 10%;}
 #Faq h2{font-size: 3em; margin: 5% 0; transition: all .3s;}
 #Faq .faq-items{background-color: #ffffff; padding:2px 10px 15px 10px; border-radius: 10px; margin-bottom: 15px; transition: all .8s; animation: toggle .5s cubic-bezier(0.14, 0.68, 0.5, 1.23); cursor: pointer;}
@@ -131,19 +160,24 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
     }
    }
 
-.footer{background-color: #131313; color: #fff; padding: 60px 10px 0px 10px;}
+.footer{background-color: #131313; color: #fff; padding: 60px 15px 0px 15px;}
 .footer .part1 span{font-size: 25px; font-weight: 500; margin: 10px;}
 .footer .part1 p{margin: 15px 0px;}
 .footer img{width: 50px;border-radius: 10px;}
 .footer li{list-style-type: none;}
 .footer a{color: #fff; text-decoration: underline;}
-footer .bottom{background-color: #000; padding: 20px;margin-top: 25px; height: 100px;}
+footer .bottom{background-color: #000; padding: 20px;margin-top: 25px; height: 100px; width: 99.8%;}
 footer .bottom .copyright h5{display: flex; width: 80%;justify-content: center; margin: auto auto;}
 footer .bottom .link-medias{margin-right: 20px;}
 footer .bottom div a{margin:0px 10px;}
 footer .bottom div a i{font-size: 30px; background-color: #2e2e2e; border-radius: 8px; padding: 5px;}
+
+/*Small devices*/
 @media (max-width: 1025px) {
-.banner h1{font-size: 50px; text-align:center;}
+.titre{margin-left: 30px;}
+.banner h1{color: #fff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
+#detail{z-index: 990;margin: 5px 0px 15px 0px; color: #fff; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
+#cta{z-index: 990;margin: 20px 0px 0px 0px; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}  
 div img.empoule{position: absolute; top: -50px; width: 100%; margin-left: -4%; z-index: 999;}
 .achievement .card{margin:5% 3% ; padding: 0px 5px;}
 .service{margin-top: -480px;  width: 100%; padding: 10% 15% 15% 15%; border-radius: 380px;}
@@ -214,6 +248,7 @@ h2{font-size: 2.3em !important;}
         left: 0%;   
         transition: all .5s;
     }
+.titre{margin-left: 0px;}
 .about .bg-design{height: 300px;top: 500px; left: 80%; width: 50px;}
 @keyframes bounce3 {0% { }50% {top: 470px;}100%{}}
 .service{width: 100%;}
@@ -225,8 +260,7 @@ h2{font-size: 2.3em !important;}
 .mission{background-size: 100% 850px; height: 850px;}
 .mission #cta{margin-top: 50px; position: relative;}
 .mission .descript{position: relative; margin-bottom: 5%;}
-.mission .mission-image{width:80%;}
-.mission img:first-child{ width: 45%;}
+.service-reminder .offre{padding: 10px 10px 65px 10px;}
 }
 
 @media (max-width:768px) {
@@ -234,6 +268,7 @@ h2{font-size: 2.3em !important;}
     header nav{height: 55px;}
     .navbar-header{margin-left: -15px;}
     .logo1{width: 100px; margin: 4px auto;}
+    .titre{margin-left: 0px;}
     #btn-menu{top: 10px; right: 15px; border: none; background-color:#ffd2d2 ; outline: none;}
     .banner h1{color: #fff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
     #detail{z-index: 990;margin: 5px 0px 15px 0px; color: #fff; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
@@ -268,10 +303,9 @@ h2{font-size: 2.3em !important;}
     .credibility .red-bullet2{position: absolute; top: 47%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}
     .credibility .red-bullet3{position: absolute; top: 72%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}    
     .branding .hook{font-size: 0.5em;}
-    .mission .descript{position: relative; margin-bottom: 0% !important;}
-    .mission #cta{margin-top: 30px; position: relative;}
-    .mission .mission-image{width:80%; margin: -10% 0 !important;}
-    .mission img:last-child{ box-shadow: none;}
+    .mission{background-size: 100% 520px;height: 520px;}
+    .mission .descript{position: relative; margin-bottom: 5% !important;}
+    .service-reminder .offre{padding: 10px;}
     #Faq h3{font-size: 1em !important;}
     footer .bottom .link-medias{margin: 15px auto auto auto;}
     footer .bottom .link-medias i{font-size: 25px;}
@@ -300,8 +334,6 @@ h2{font-size: 2.3em !important;}
     .credibility .red-bullet2{position: absolute; top: 47%;width: 55px; height: 55px;}
     .credibility .red-bullet3{position: absolute; top: 73%;width: 55px; height: 55px;}
     .mission .descript{margin-bottom: 5% !important;}
-    .mission #cta{margin: 10px 0; position: relative;}
-    .mission .mission-image{width:130%; margin: 10% 0 10% -33% !important;}
         }
 @media screen and (min-width:320px) and (max-width:762px) and (orientation: landscape) {
             .banners{height: 600px;}

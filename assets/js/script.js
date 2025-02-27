@@ -1,6 +1,66 @@
 
           $(document).ready(function(){
             
+             // Back to top button
+              $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                  $('.back-to-top').fadeIn('slow');
+                } else {
+                  $('.back-to-top').fadeOut('slow');
+                }
+              });
+              $('.back-to-top').click(function(){
+                $('html, body').animate({scrollTop : 0},1500, 'easeInOutExpo');
+                return false;
+              });
+
+              $(window).scroll(function() {
+                if ($(this).scrollTop() > 600) {
+                  $('#navigation').addClass('header-scrolled');
+                } else {
+                  $('#navigation').removeClass('header-scrolled');
+                }
+              });
+
+              let lastScrollTop = 0;
+              const navbar = $('.navbar');
+
+              $(window).on('scroll', function() {
+             const scrollTop = $(this).scrollTop();
+
+            if (scrollTop > lastScrollTop) {
+                // Scrolling vers le bas
+                
+                    setTimeout(() => {
+                        navbar.css('top', '-120px'); // Masquer la navbar
+                    }, 100);
+        
+            
+        } else {
+            setTimeout(() => {
+                   // Scrolling vers le haut
+                    navbar.css({'top': '0px'}); 
+                    navbar.css({'color': '#fff'}); // Afficher la navbar
+                }, 300);
+            
+        }
+        lastScrollTop = scrollTop;
+    });
+
+            // Événement de clic sur les liens
+            $('.nav-link').on('click', function(event) {
+              event.preventDefault(); // Empêcher le comportement par défaut
+
+              // Récupérer l'ID de la section cible
+              const target = $(this).attr('href');
+              
+
+              // Scroller vers la section cible
+              $('html, body').animate({
+                  scrollTop: $(target).offset().top
+              }, 1500,'easeInOutExpo'); // Durée de l'animation
+          });
+
             $('#btn-menu').click(function(){
                 $('#menu').toggleClass('navOn');
                 $('#btn-menu-close').show();
