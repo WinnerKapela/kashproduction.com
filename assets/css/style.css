@@ -3,9 +3,9 @@
     position: fixed;
     display: none;
     background: #fff;
-    box-shadow: 0px 2px 5px 3px #b0b0b0;
-    width: 45px;
-    height: 45px;
+    border: 2px solid red;
+    width: 40px;
+    height: 40px;
     text-align: center;
     border-radius: 15px;
     right: 15px;
@@ -22,8 +22,7 @@
   .back-to-top:hover {
     background: #e3e3e3;
   }
-/*div{border: 1px solid green;}*/
-body{font-family: 'Ubuntu'; overflow-x: hidden; background-color: #fde1e1; transition: all 0.5s ease-in-out;}
+body{font-family: 'Ubuntu'; overflow-x: hidden; background-color: #fde1e1;}
 header nav{position: fixed !important; height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important; z-index: 998 !important;
     transition: top .3s;}
 #navigation.header-scrolled {background-color: #fff !important; box-shadow: 0px 1px 10px 0px #898989; transition: all 0.5s;}
@@ -38,7 +37,7 @@ nav .nav li:nth-child(4){margin-right: 7%;}
 .contact #a-contact:active{background-color: #efa002 !important;transition:all 0.5s ease-in-out;}
 .navbar-header{margin-top: -20px;}
 .logo1{width: 170px;}
-.titre{margin-top: 70px;}
+.titre{margin-top: 70px; width: 100%;}
 .banners{background-color:#b70000; width: 100%; height: 765px; position: absolute;top:-218px; left: -0%; z-index: 900;}
 .banner1{background: linear-gradient(180deg, #b70000,rgb(84, 1, 1)); width: 100%; height: 160px; position: absolute;bottom: 40px; left: -0%; border-radius:0% 0% 100% 100%; animation: bounce 8s infinite; z-index: 910;}
 .banner2{background-color: #f18a98; width: 100%; height: 140px; position: absolute;bottom: 18px; left: -0%; border-radius:0% 0% 100% 100%; z-index: 980;animation: bounce 8s infinite; z-index: 900;}
@@ -52,7 +51,7 @@ div img.empoule{position: absolute;top: 70px; width: 100%; z-index: 990;}
 
 
 .titre p{ z-index: 1000;}
-.banner h1{color: #fff; z-index: 990; font-size: 60px; margin-left: 50px;}
+.banner h1{color: #fff; z-index: 990; font-size: 60px; margin-left: 40px;}
 #detail{z-index: 990;margin: 5px 0px 15px 50px; color: #fff;}
 #cta{z-index: 990;margin: 20px 0px 0px 50px;}
 #cta a{padding: 12px; margin-right: 2%;border-radius: 8px;border: none;color: #fff;}
@@ -303,7 +302,7 @@ h2{font-size: 2.3em !important;}
     .credibility .red-bullet2{position: absolute; top: 47%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}
     .credibility .red-bullet3{position: absolute; top: 72%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}    
     .branding .hook{font-size: 0.5em;}
-    .mission{background-size: 100% 520px;height: 520px;}
+    .mission{background-size: 100% 580px;height: 580px;}
     .mission .descript{position: relative; margin-bottom: 5% !important;}
     .service-reminder .offre{padding: 10px;}
     #Faq h3{font-size: 1em !important;}
