@@ -13,12 +13,22 @@
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
      <link href="assets/glightbox/css/glightbox.min.css" rel="stylesheet">
      <!--link swiper js file-->
-     <script src="assets/aos/aos.js" defer></script>
      <script src="assets/js/swiper-bundle.min.js"></script>
     <script src="assets/js/jquery-3.6.4.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/script.js" defer></script>
-    <script src="assets/easing/easing.min.js" defer></script>
+    <script src="assets/aos/aos.js"></script>
+    <script src="assets/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/easing/easing.min.js"></script>
+     <script>
+          $(document).ready(function(){
+            $('.nav-link').on('click', function() {
+                event.Default();
+            })
+          })
+          
+     </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 </head>
@@ -46,14 +56,14 @@
                                         <i class="glyphicon glyphicon-remove"></i>
                                     </button>
                                 </div>
-                                <li class="col-md-0 text-center"><a href="#" class="menu accueil active">Accueil</a></li>
-                                <li class="col-sm- col-md-2 text-center"><a href="#service" class="menu nav-link">Services</a></li>
-                                <li class="col-sm- col-md- text-center"><a href="a-propos.html" class="menu">Nous decouvrir</a></li>
+                                <li class="col-md-0 text-center"><a href="index.html" class="menu">Accueil</a></li>
+                                <li class="col-sm- col-md-2 text-center"><a href="index.html#service" class="menu nav-link">Services</a></li>
+                                <li class="col-sm- col-md- text-center"><a href="#" class="active menu">Nous decouvrir</a></li>
                                 <li class="col-sm- col-md- text-center contact"><a href="#" id="a-contact" class="menu">Contactez-nous <i class="fa fa-arrow-right"></i></a></li>
                             </ul>
                   
                     </nav>
-                    <div class="banner">
+                    <div class="banner apropos">
                         <div class="design">
                             <div class="bg-design"></div>
                             <div class="bg-design"></div>
@@ -63,18 +73,10 @@
                         <div class="banner3 "></div>
                         <div class="banners "></div>
                         <div>
-                            <div class="hidden-xs col-sm-5 col-sm-push-6 col-md-5 col-md-push-6"><img class="img-responsive empoule" src="assets/img/creative-bulb-with-paint-colors-generative-ai.png" alt=""></div>
                             <div class="container-fluid">
                                 <div class="row titre">
                                     <div class="col-md-10 titre">
-                                        <h1 class="col-xs-10 col-xs-offset-2 col-sm-12 col-sm-offset-0 col-md-7">Communiquer visiblement la pensée abstraite.</h1>
-                                        <p id="detail" class="col-xs-9 col-xs-offset-3 col-sm-offset-0 col-sm-5 col-md-7">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam ab excepturi
-                                            totam doloribus praesentium iure Aliquam ab excepturi totam doloribus praesentium iure?</p>
-        
-                                        <div id="cta" class="col-xs-9 col-xs-offset-3  col-sm-7 col-md-7">
-                                            <a href="" class="btn btn-default">Demander un devis</a>
-                                            <a href="" class="btn btn-default">Nos services</a>
-                                        </div>
+                                        <h1 class="col-xs-10 col-md-offset-0 col-md-11 text-center">A propos de nous</h1>
                                     </div>
                                 </div>
                                 
@@ -91,16 +93,10 @@
     <div class="container-fluid">
         <div class="row about" data-aos="fade-up">
             <div class="banner4 col-md-12 col-sm-12">
-                <div class="illustration">
-                    <div class="col-sm-10 col-sm-offset-1 col-md-4 illustr">
-                        <img src="assets/img/about-image.png" class="col-sm-offset-2 col-md-offset-0 img-illustr img-responsive" alt="Illustration equipe">
-                    </div>
-                    
-                </div>
                 <div class="col-sm-12 col-md-6 col-md-offset-1 description">
                     
                    <div>
-                        <h2>Ce que nous sommes.</h2>
+                        <h2>Qui sommes-nous.</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, 
                         adipisicing elit. Quisquam, voluptatibus Lorem
                          ipsum dolor sit amet consectetur adipisicing elit. 

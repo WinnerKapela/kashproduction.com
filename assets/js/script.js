@@ -24,6 +24,7 @@
 
               let lastScrollTop = 0;
               const navbar = $('.navbar');
+              const btnmenu = $('#btn-menu')
 
               $(window).on('scroll', function() {
              const scrollTop = $(this).scrollTop();
@@ -33,6 +34,7 @@
                 
                     setTimeout(() => {
                         navbar.css('top', '-120px'); // Masquer la navbar
+                        btnmenu.css({'background-color':'inherit'})
                     }, 100);
         
             
@@ -41,6 +43,7 @@
                    // Scrolling vers le haut
                     navbar.css({'top': '0px'}); 
                     navbar.css({'color': '#fff'}); // Afficher la navbar
+                    btnmenu.css({'background':'#eae8e8'})
                 }, 300);
             
         }
@@ -50,15 +53,25 @@
             // Événement de clic sur les liens
             $('.nav-link').on('click', function(event) {
               event.preventDefault(); // Empêcher le comportement par défaut
-
               // Récupérer l'ID de la section cible
+              
+                $('#menu').removeClass('navOn');
+                $('#btn-menu-close').hide();
+                $('#fondNoir').removeClass();
+               
               const target = $(this).attr('href');
               
-
+              $('.menu.active').removeClass('active')
+              $('.nav-link').addClass('active');
+              $('.accueil').click(function(){
+                $('.menu.accueil').addClass('active');
+                $('.nav-link.active').removeClass('active')
+              })
               // Scroller vers la section cible
               $('html, body').animate({
                   scrollTop: $(target).offset().top
               }, 1500,'easeInOutExpo'); // Durée de l'animation
+              
           });
 
             $('#btn-menu').click(function(){
@@ -67,6 +80,13 @@
                 $('#fondNoir').toggleClass('fondNoirOn');
                 
             })
+           const $func = function closeMenu(){
+            $('#btn-menu-close').click(function(){
+              $('#menu').removeClass('navOn');
+              $('#btn-menu-close').hide();
+              $('#fondNoir').removeClass();
+              });
+           } 
             $('#btn-menu-close').click(function(){
                 $('#menu').removeClass('navOn');
                 $('#btn-menu-close').hide();

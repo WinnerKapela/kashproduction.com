@@ -57,7 +57,7 @@ div img.empoule{position: absolute;top: 70px; width: 100%; z-index: 990;}
 #cta a{padding: 12px; margin-right: 2%;border-radius: 8px;border: none;color: #fff;}
 #cta a:first-child{background-color: #ffa800;}
 #cta a:last-child{background: transparent; border: 2px solid #fff; padding: 10px 20px}
-.about{margin-top: 300px; position: relative;}
+.about{margin-top: 30%; position: relative;}
 
 .about h2{font-size: 3em;}
 .illustr{margin:0px;}
@@ -153,11 +153,16 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 #Faq .wrapper4.wrapper-four #four .glyphicon-chevron-right{transform: rotate(90deg);}
 #Faq .wrapper5.wrapper-five #five .glyphicon-chevron-right{transform: rotate(90deg);}
 
-@keyframes toggle {
-    from{
-      transform: translateY(-2px);
-    }
-   }
+@keyframes toggle {from{transform: translateY(-2px);}}
+
+/*Page nous découvrir*/
+.apropos .titre{margin-top: 85px;margin-left: 0px;}
+.apropos .banner h1{display: flex; width: 100%; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
+.apropos .banners{height: 650px; position: absolute;top:-218px;}
+.apropos .banner1{height: 160px; position: absolute;bottom: 150px;}
+.apropos .banner2{height: 140px; position: absolute;bottom: 128px;}
+.apropos .banner3{width: 100%; height: 140px; position: absolute;bottom: 138px;}
+
 
 .footer{background-color: #131313; color: #fff; padding: 60px 15px 0px 15px;}
 .footer .part1 span{font-size: 25px; font-weight: 500; margin: 10px;}
@@ -248,6 +253,7 @@ h2{font-size: 2.3em !important;}
         transition: all .5s;
     }
 .titre{margin-left: 0px;}
+.apropos .banner h1{display: flex; width: 100%; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
 .about .bg-design{height: 300px;top: 500px; left: 80%; width: 50px;}
 @keyframes bounce3 {0% { }50% {top: 470px;}100%{}}
 .service{width: 100%;}
@@ -267,8 +273,9 @@ h2{font-size: 2.3em !important;}
     header nav{height: 55px;}
     .navbar-header{margin-left: -15px;}
     .logo1{width: 100px; margin: 4px auto;}
-    .titre{margin-left: 0px;}
-    #btn-menu{top: 10px; right: 15px; border: none; background-color:#ffd2d2 ; outline: none;}
+    .titre{margin-top: 45px;margin-left: 0px;}
+
+    #btn-menu{top: 8px; right: 15px; border: none; background-color:#ffd2d2 ; outline: none;}
     .banner h1{color: #fff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
     #detail{z-index: 990;margin: 5px 0px 15px 0px; color: #fff; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
     #cta{z-index: 990;margin: 20px 0px 0px 0px; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}  
@@ -276,10 +283,17 @@ h2{font-size: 2.3em !important;}
     .banner1{height: 140px; position: absolute;bottom: 14%; z-index: 910;}
     .banner2{height: 140px; position: absolute;bottom: 11.2%; border-radius:0% 0% 100% 100%; z-index: 900;}
     .banner3{background-color: #ea546b; width: 100%;bottom: 12.5%; left: -0%; border-radius:0% 0% 100% 100%;animation: bounce2 8s infinite; z-index: 900;}
+    .apropos .banners{height: 500px !important;}
+    .apropos .titre{margin-top:70px;}
+    .apropos .banner1{height: 120px; position: absolute;bottom: 250px;}
+    .apropos .banner2{height: 100px; position: absolute;bottom: 235px;}
+    .apropos .banner3{width: 100%; height: 100px; position: absolute;bottom: 243px;}
     .bg-design{width: 45px; height: 500px; border-radius: 50px; position: absolute; top: 120px; transform: rotate(30deg);}
     .bg-design:first-child{top: 110px; left: -60px; background-color: #700004af;}
     .bg-design:last-child{top: 105px; left: -15px; background-color: #700004af;}
     .banner h1{color: #fff; z-index: 990; font-size: 35px; margin-left: 0px; text-align: center;}
+    
+    .about{margin-top: 40%;}
     .about .bg-design{height: 200px;top: 40%; left: 70%; animation: none;}
     .design-2 .bg-design:first-child{top: 70px; left: -80px; background-color: #700004af;}
     .design-2 .bg-design:last-child{top: 50px; left: -30px; background-color: #700004af;}
@@ -322,13 +336,18 @@ h2{font-size: 2.3em !important;}
 @media screen and (min-width:768px) and (max-width:1024px) and (orientation: landscape) {
     .banners{height: 92%;}
     .empoule{display: none;}
-    .banner1{height: 150px; position: absolute;bottom: 27%;}
-    .banner2{height: 150px; position: absolute;bottom: 25%;}
+    .banner1{height: 50px; position: absolute;bottom: 27%;}
+    .banner2{height: 50px; position: absolute;bottom: 25%;}
     .banner3{bottom: 26%;}
     .banner h1{font-size: 45px; padding-top: 25px;}
     .credibility .red-bullet{top: 200px; left: 41%;width: 110px; height: 110px; display: block; border: 25px solid #fde1e1;}
     }
 @media (max-width:320px) {
+    .apropos .banners{height: 500px !important;}
+    .apropos .titre{margin-top:70px;}
+    .apropos .banner1{height: 120px; position: absolute;bottom: 250px;}
+    .apropos .banner2{height: 100px; position: absolute;bottom: 235px;}
+    .apropos .banner3{width: 100%; height: 100px; position: absolute;bottom: 243px;}
     .credibility .red-bullet{top: 22%; left: 44%;width: 55px; height: 55px; display: block;}
     .credibility .red-bullet2{position: absolute; top: 47%;width: 55px; height: 55px;}
     .credibility .red-bullet3{position: absolute; top: 73%;width: 55px; height: 55px;}
