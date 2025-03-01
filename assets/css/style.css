@@ -199,7 +199,7 @@ h2{font-size: 2.3em !important;}
 .branding .hook{font-size: 0.8em;}
 }
 @media (max-width:992px){
-#btn-menu{float: right; position: absolute; top: 20px; right: 20px; border-radius: 50%;
+#btn-menu{float: right; position: absolute; top: 20px; right: 20px; border-radius: 50%;border:1px solid #d1d0d0 ;
     width: 40px;
     height: 40px;}
 #menu{display: block;position: fixed;top: -10px;height: 110%;width: 80%;right: -110%;background-color: #fff;box-shadow: 1px 1px 5px #2e2e2e;
@@ -345,7 +345,7 @@ h2{font-size: 2.3em !important;}
     .credibility .red-bullet{top: 200px; left: 41%;width: 110px; height: 110px; display: block; border: 25px solid #fde1e1;}
     }
 @media (max-width:320px) {
-    .apropos .banners{height: 500px !important;}
+    .apropos .banners{height: 520px !important;}
     .apropos .titre{margin-top:70px;}
     .apropos .banner1{height: 120px; position: absolute;bottom: 250px;}
     .apropos .banner2{height: 100px; position: absolute;bottom: 235px;}
