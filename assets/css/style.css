@@ -199,7 +199,7 @@ h2{font-size: 2.3em !important;}
 .branding .hook{font-size: 0.8em;}
 }
 @media (max-width:992px){
-#btn-menu{float: right; position: absolute; top: 20px; right: 20px; border-radius: 50%;border:1px solid #d1d0d0 ;
+#btn-menu{float: right; position: absolute; top: 20px; right: 20px; border-radius: 50%;
     width: 40px;
     height: 40px;}
 #menu{display: block;position: fixed;top: -10px;height: 110%;width: 80%;right: -110%;background-color: #fff;box-shadow: 1px 1px 5px #2e2e2e;

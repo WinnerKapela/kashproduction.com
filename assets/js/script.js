@@ -34,7 +34,7 @@
                 
                     setTimeout(() => {
                         navbar.css('top', '-120px'); // Masquer la navbar
-                        btnmenu.css({'background-color': '#eae8e8'})
+                        btnmenu.css({'background-color':'inherit'})
                     }, 100);
         
             
