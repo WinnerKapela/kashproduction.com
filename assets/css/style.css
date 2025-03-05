@@ -175,7 +175,7 @@ form input,form textarea{padding: 20px !important; border-radius: 8px !important
 .apropos .banner2{height: 140px; position: absolute;bottom: 128px;}
 .apropos .bg-design{width: 45px; height: 300px;}
 .apropos .banner3{width: 100%; height: 140px; position: absolute;bottom: 138px;}
-.about2 .info-about, .vision, .expertise, .valeurs{margin-top: 100px; z-index: 990 !important;}
+.about2 .info-about, .vision, .expertise, .valeurs{margin-top: 80px; z-index: 990 !important;}
 .about2 .cards li{z-index: 950; background-color: red;color: #fff;font-weight: 500; margin: 10px; padding:15px; border-radius: 8px; list-style-type: none;}
 .about2 .cta {margin-top: 25px;}
 .about2 .cta a{color: #efa002; text-decoration: underline;font-weight: bold;}
@@ -383,7 +383,7 @@ display: inline-block;
             }
 @media (max-width:320px) {
    
-    .apropos .titre{margin-top:50px;}
+    .apropos .titre{margin-top:65px;}
     .apropos .banner1{height: 130px; position: absolute;bottom: 45%;}
     .apropos .banner2{height: 120px; position: absolute;bottom: 41.5%;}
     .apropos .banner3{width: 100%; height: 130px; position: absolute;bottom: 43%;}
