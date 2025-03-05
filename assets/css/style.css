@@ -25,7 +25,7 @@
     background: #f9f3f3;
   }
 body{font-family: 'Ubuntu'; overflow-x: hidden; background-color: #fde1e1;}
-header nav{position: fixed !important; height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fbe6e8 !important; z-index: 998 !important;
+header nav{position: fixed !important; height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fdeff0 !important; z-index: 998 !important;
     transition: top .3s;}
 #navigation.header-scrolled {background-color: #fff !important; box-shadow: 0px 1px 10px 0px #898989; transition: all 0.5s;}
 nav .nav li{margin-left: 3%; padding: 0% !important;}
@@ -90,6 +90,17 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .service .card-img, .service .bx{width: 30px; font-size: 30px;color:#d53939;}
 .font-ux{color:#bc3b3b;}
 .cta-service{background-color: #ffa800; border: none; border-radius: 10px; color: #fff; padding: 10px; margin-top: 50px;}
+.contact-form{z-index: 1500; position: fixed !important; top: 20px;display: flex;justify-content: center;margin: auto auto;width: 85%;}
+form{z-index: 1400; display: none; padding: 30px; background-color: #fff;border-radius: 10px; box-shadow: 0px 1px 10px 0px #aaaaaa;}
+.contact-form .bg-form{display: none; position: fixed;background-color: #2e2e2eb5;top: 0px;width: 100%;height: 100%;left: 0%;transition: all .4s;z-index: 1300;}
+form #btn-contact-close{position: absolute;top: 10px;right: 20px;z-index: 10;background-color: #ebebeb;color: #151515; border: none; outline: none; border-radius: 50%; width: 40px;height: 40px;}
+form h2{margin-top: 20px;}
+form .media {margin: 25px 0;}
+form .media i{font-size: 2em; color: #fff; background-color: #2b2a2a; padding: 5px;margin: 0 5px; border-radius: 50px;}
+form .media .tel{color: #131313; font-size: 1.1em;}
+form textarea{width: 100% !important; resize: none;} 
+form button{padding: 10px 0px !important;}
+form input,form textarea{padding: 20px !important; border-radius: 8px !important;}
 .testimony{margin-top: 12%;}
 .testimony .design-2{top: -50px;}
 .testimony .bg-design:first-child{top: -40px; left: -8%; background-color: #f2d1d1;}
@@ -125,7 +136,6 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .mission .content{margin-top: 2%;}
 .mission .content h2{position: relative;padding: 30px 0 30px 0; font-size: 3em;}
 .mission .mission-image img{border-radius: 10px !important; width: 100%; padding: 0;}
-
 .service-reminder{margin: 120px 0px 40px 0px;}
 .service-reminder img{width: 100%; border-radius: 15px;}
 .service-reminder .offre{margin-top: 5%; background-color: #fff; padding: 10px; margin-right: 15px; border-radius: 15px; box-shadow: 2px 3px 10px #9f9f9f;}
@@ -163,9 +173,12 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .apropos .banners{height: 650px; position: absolute;top:-218px;}
 .apropos .banner1{height: 160px; position: absolute;bottom: 150px;}
 .apropos .banner2{height: 140px; position: absolute;bottom: 128px;}
+.apropos .bg-design{width: 45px; height: 300px;}
 .apropos .banner3{width: 100%; height: 140px; position: absolute;bottom: 138px;}
-
-
+.about2 .info-about, .vision, .expertise, .valeurs{margin-top: 100px; z-index: 990 !important;}
+.about2 .cards li{z-index: 950; background-color: red;color: #fff;font-weight: 500; margin: 10px; padding:15px; border-radius: 8px; list-style-type: none;}
+.about2 .cta {margin-top: 25px;}
+.about2 .cta a{color: #efa002; text-decoration: underline;font-weight: bold;}
 .footer{background-color: #131313; color: #fff; padding: 60px 15px 0px 15px;}
 .footer .part1 span{font-size: 25px; font-weight: 500; margin: 10px;}
 .footer .part1 p{margin: 15px 0px;}
@@ -181,12 +194,25 @@ footer .bottom div a i{font-size: 30px; background-color: #2e2e2e; border-radius
 /*Small devices*/
 @media (max-width: 1025px) {
 .titre{margin-left: 30px;}
-.banner h1{color: #fff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
+.banner h1{color: #ffffff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
+.banners{height: 100%;}
+.banner1{height: 180px !important; position: absolute;bottom: 18% !important; z-index: 910;}
+.banner2{height: 180px !important; position: absolute;bottom: 15.2% !important; border-radius:0% 0% 100% 100%; z-index: 900;}
+.banner3{background-color: #ea546b;height: 180px !important; width: 100%;bottom: 16.5% !important; left: -0%; border-radius:0% 0% 100% 100%;animation: bounce2 8s infinite; z-index: 900;}
 #detail{z-index: 990;margin: 5px 0px 15px 0px; color: #fff; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
 #cta{z-index: 990;margin: 20px 0px 0px 0px; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}  
 div img.empoule{position: absolute; top: -50px; width: 100%; margin-left: -4%; z-index: 999;}
+
+.apropos .titre{margin-top:70px;}
+.apropos .banners{height: 650px; position: absolute;top:-218px;}
+.apropos .banner1{height: 110px !important; position: absolute;bottom: 18% !important; z-index: 910;}
+.apropos .banner2{height: 100px !important; position: absolute;bottom: 15.2% !important; border-radius:0% 0% 100% 100%; z-index: 900;}
+.apropos .banner3{background-color: #ea546b;height: 100px !important; width: 100%;bottom: 16.5% !important; left: -0%; border-radius:0% 0% 100% 100%;animation: bounce2 8s infinite; z-index: 900;}
+.apropos .bg-design{width: 45px; height: 300px;}
+
 .achievement .card{margin:5% 3% ; padding: 0px 5px;}
 .service{margin-top: -480px;  width: 100%; padding: 10% 15% 15% 15%; border-radius: 380px;}
+form{padding-bottom: 60px;}
 .swiper{width: 90%; border-radius: 10px;}
 .credibility .red-bullet{top: 50%; left: 42%; width: 80px; height: 80px;}
 h2{font-size: 2.3em !important;}
@@ -202,6 +228,7 @@ h2{font-size: 2.3em !important;}
 #btn-menu{float: right; position: absolute; top: 20px; right: 20px; border-radius: 50%;
     width: 40px;
     height: 40px;}
+#btn-menu i{font-weight: bolder;}
 #menu{display: block;position: fixed;top: -10px;height: 110%;width: 80%;right: -110%;background-color: #fff;box-shadow: 1px 1px 5px #2e2e2e;
         padding-top: 70px;
         margin-right: 0px;
@@ -260,7 +287,6 @@ h2{font-size: 2.3em !important;}
 @keyframes bounce3 {0% { }50% {top: 470px;}100%{}}
 .service{width: 100%;}
 .service .card{margin:5% 2% 5% 0%; width: 47%; padding: 1% 2% 1% 2%;}
-
 .qTag1{color: red; font-size: 2em;}
 .qTag{display: none; }
 .credibility .red-bullet{display: none !important;}
@@ -268,6 +294,10 @@ h2{font-size: 2.3em !important;}
 .mission #cta{margin-top: 50px; position: relative;}
 .mission .descript{position: relative; margin-bottom: 5%;}
 .service-reminder .offre{padding: 10px 10px 65px 10px;}
+.carousel-control {
+cursor:auto !important;
+display: inline-block;
+}
 }
 
 @media (max-width:768px) {
@@ -277,25 +307,27 @@ h2{font-size: 2.3em !important;}
     .logo1{width: 100px; margin: 4px auto;}
     .titre{margin-top: 45px;margin-left: 0px;}
 
-    #btn-menu{top: 8px; right: 15px; border: none; background-color:#ffd2d2 ; outline: none;}
+    #btn-menu{top: 8px; right: 15px; border: 1px solid #b8b8b8; background-color:; outline: none;}
     .banner h1{color: #fff; z-index: 990; font-size: 40px;width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
     #detail{z-index: 990;margin: 5px 0px 15px 0px; color: #fff; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}
     #cta{z-index: 990;margin: 20px 0px 0px 0px; width: 100%; display: flex; margin:15px auto; justify-content: center; align-items: center; text-align: center;}  
     .banners{height: 100%;}
     .banner1{height: 140px; position: absolute;bottom: 14%; z-index: 910;}
     .banner2{height: 140px; position: absolute;bottom: 11.2%; border-radius:0% 0% 100% 100%; z-index: 900;}
-    .banner3{background-color: #ea546b; width: 100%;bottom: 12.5%; left: -0%; border-radius:0% 0% 100% 100%;animation: bounce2 8s infinite; z-index: 900;}
-    .apropos .banners{height: 85% !important;}
-    .apropos .titre{margin-top:70px;}
-    .apropos .banner1{height: 120px; position: absolute;bottom: 265px;}
-    .apropos .banner2{height: 100px; position: absolute;bottom: 245px;}
-    .apropos .banner3{width: 100%; height: 100px; position: absolute;bottom: 253px;}
+    .banner3{background-color: #ea546b; width: 100%;bottom: 12.5%; left: -0%; border-radius:0% 0% 100% 100%;animation: bounce2 8s infinite; z-index: 900;} 
     .bg-design{width: 45px; height: 500px; border-radius: 50px; position: absolute; top: 120px; transform: rotate(30deg);}
     .bg-design:first-child{top: 110px; left: -60px; background-color: #700004af;}
     .bg-design:last-child{top: 105px; left: -15px; background-color: #700004af;}
     .banner h1{color: #fff; z-index: 990; font-size: 35px; margin-left: 0px; text-align: center;}
+    .apropos .banners{height: 82% !important;}
+    .apropos .titre{margin-top:70px;}
+    .apropos .banner1{height: 120px; position: absolute;bottom: 265px !important;}
+    .apropos .banner2{height: 100px; position: absolute;bottom: 245px !important;}
+    .apropos .banner3{width: 100%; height: 100px; position: absolute;bottom: 253px !important;}
+    .apropos .bg-design{width: 45px; height: 300px;}
     
     .about{margin-top: 40%;}
+    .apropos .about{margin-top: 60% !important;}
     .about .bg-design{height: 200px;top: 40%; left: 70%; animation: none;}
     .design-2 .bg-design:first-child{top: 70px; left: -80px; background-color: #700004af;}
     .design-2 .bg-design:last-child{top: 50px; left: -30px; background-color: #700004af;}
@@ -306,6 +338,7 @@ h2{font-size: 2.3em !important;}
     .service .card{margin:13% 25px 0% 5%; width: 90%; padding: 1% 4% 3% 4%; z-index: 1000;}
     .service .card h3{text-align: center;}
     .service .card-service h2{font-size: 1.2em !important;}
+    .contact-form{width: 100%;left: 0;}
     .testimony{margin-top: 14%;}
     .testimony .card{margin: 0%;}
     .testimony .bg-design:first-child{top: -10px; left: -125px; background-color: #f2d1d1;}
@@ -344,12 +377,17 @@ h2{font-size: 2.3em !important;}
     .banner h1{font-size: 45px; padding-top: 25px;}
     .credibility .red-bullet{top: 200px; left: 41%;width: 110px; height: 110px; display: block; border: 25px solid #fde1e1;}
     }
+@media (max-width:500px) {
+       
+        .about2{margin-top: 60%;}
+            }
 @media (max-width:320px) {
-    .apropos .banners{height: 85% !important;}
+   
     .apropos .titre{margin-top:70px;}
-    .apropos .banner1{height: 130px; position: absolute;bottom: 265px;}
-    .apropos .banner2{height: 120px; position: absolute;bottom: 245px;}
-    .apropos .banner3{width: 100%; height: 130px; position: absolute;bottom: 253px;}
+    .apropos .banner1{height: 130px; position: absolute;bottom: 45%;}
+    .apropos .banner2{height: 120px; position: absolute;bottom: 41.5%;}
+    .apropos .banner3{width: 100%; height: 130px; position: absolute;bottom: 43%;}
+    .about2{margin-top: 60%;}
     .credibility .red-bullet{top: 22%; left: 44%;width: 55px; height: 55px; display: block;}
     .credibility .red-bullet2{position: absolute; top: 47%;width: 55px; height: 55px;}
     .credibility .red-bullet3{position: absolute; top: 73%;width: 55px; height: 55px;}

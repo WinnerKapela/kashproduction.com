@@ -15,7 +15,7 @@
               });
 
               $(window).scroll(function() {
-                if ($(this).scrollTop() > 600) {
+                if ($(this).scrollTop() > 400) {
                   $('#navigation').addClass('header-scrolled');
                 } else {
                   $('#navigation').removeClass('header-scrolled');
@@ -43,7 +43,7 @@
                    // Scrolling vers le haut
                     navbar.css({'top': '0px'}); 
                     navbar.css({'color': '#fff'}); // Afficher la navbar
-                    btnmenu.css({'background':'#eae8e8'})
+                    btnmenu.css({'background':''})
                 }, 300);
             
         }
@@ -98,7 +98,19 @@
                 $('#fondNoir').removeClass();          
                 
             });
-
+          // Display form
+          $('.a-contact').click(function(e){
+            e.preventDefault();
+            $('.formulaire').fadeIn(500);
+            $('.formulaire').show(300);
+            $('.bg-form').show();
+            
+          })
+          $('#btn-contact-close').click(function(){
+            $('.formulaire').fadeOut(500);
+            $('.formulaire').hide(300);
+            $('.bg-form').hide();
+          })
           // FAQ section
             $(document).ready(function(){
               $('#one').click(function(){

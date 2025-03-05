@@ -11,7 +11,6 @@
      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
      <link href="assets/aos/aos.css" rel="stylesheet">
      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-     <link href="assets/glightbox/css/glightbox.min.css" rel="stylesheet">
      <!--link swiper js file-->
      <script src="assets/aos/aos.js" defer></script>
      <script src="assets/js/swiper-bundle.min.js"></script>
@@ -49,7 +48,7 @@
                                 <li class="col-md-0 text-center"><a href="#" class="menu accueil active">Accueil</a></li>
                                 <li class="col-sm- col-md-2 text-center"><a href="#service" class="menu nav-link">Services</a></li>
                                 <li class="col-sm- col-md- text-center"><a href="a-propos.html" class="menu">Nous decouvrir</a></li>
-                                <li class="col-sm- col-md- text-center contact"><a href="#" id="a-contact" class="menu">Contactez-nous <i class="fa fa-arrow-right"></i></a></li>
+                                <li class="col-sm- col-md- text-center contact"><a href="#" id="a-contact" class="menu a-contact">Contactez-nous <i class="fa fa-arrow-right"></i></a></li>
                             </ul>
                   
                     </nav>
@@ -72,7 +71,7 @@
                                             totam doloribus praesentium iure Aliquam ab excepturi totam doloribus praesentium iure?</p>
         
                                         <div id="cta" class="col-xs-9 col-xs-offset-3  col-sm-7 col-md-7">
-                                            <a href="" class="btn btn-default">Demander un devis</a>
+                                            <a href="" class="btn btn-default a-contact">Demander un devis</a>
                                             <a href="" class="btn btn-default">Nos services</a>
                                         </div>
                                     </div>
@@ -204,7 +203,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-md-offset-2"><p class="text-center cta-link">Avez-vous une idée vous aimeriez que nous concrétisons ? <a href="">Demandez un devis maintenant</a></p></div>
+                        <div class="col-md-8 col-md-offset-2"><p class="text-center cta-link">Avez-vous une idée vous aimeriez que nous concrétisons ? <a href="" class="a-contact">Demandez un devis maintenant</a></p></div>
                         </div>
             </div>
             
@@ -247,11 +246,48 @@
                                 esse dolores optio est vel voluptatibus odio nihil?</p>
                         </div>
                        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-4">
-                        <a href="" class="btn btn-default cta-service col-xs-12 col-sm-12 col-md-12 col-md-offset-2 ">Contactez-nous <i class="fa fa-arrow-right"></i></a>
+                        <a href="" class="btn btn-default cta-service col-xs-12 col-sm-12 col-md-12 col-md-offset-2 a-contact">Contactez-nous <i class="fa fa-arrow-right"></i></a>
                        </div>
                     </div>
                 </div>
         </div>
+            </div>
+            <div class="row contact-form">
+                <div class="bg-form"></div>
+                <div class="col-xs-12 col-xs-offset-0 col-sm-10 col-sm-offset-1  col-md-8 col-md-offset-2">
+                    <form action="" class="col-md-12 formulaire">
+                        <button type="button" class="btn btn-default" id="btn-contact-close">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                        <h2 class="text-center">Contact</h2>
+                        <div class="col-md-12 media">
+                            <a class="" href=""><i class="bx bxl-facebook"></i></a>
+                            <a class="" href=""><i class="bx bxl-instagram"></i></a>
+                            <a class="pull-right tel" href="tel:+243821034469"><i class="bx bx-phone"></i><span class="hidden-xs">+243 821034469</span></a>
+                        </div>
+                        <div class="form-group col-sm-6 col-md-6">
+                            <input type="text" class="form-control  field" name="name" id="username" placeholder="Votre Nom complet">
+                        </div>
+                        <div class="form-group col-sm-6 col-md-6">
+                            <input type="email" class="form-control col-sm-5 col-md-6 field" name="name" id="email" placeholder="Votre adresse email">
+                        </div>
+                        
+                        <div class="form-group col-md-12">                   
+                            <input type="text" class="form-control field" name="name" id="titre" placeholder="Sujet de requête">
+                        </div>
+                        <br/>
+                        <div class="col-md-12">
+                            <div><label for="message" class="label-textarea">Votre Message</label></div>
+                            <textarea name="message" id="message" cols="100" rows="5" class="textarea form-control field" placeholder="Votre message"></textarea>
+                        </div>
+                        
+                        <div class="col-md-12">
+                            <br/>
+                            <button type="submit" class="btn btn-danger col-xs-6 col-xs-offset-3 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">Envoyer <i class="glyphicon glyphicon-send"></i></button>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
             <div class="row">
                 <div class="col-md-12 testimony" data-aos="fade-up">
@@ -340,7 +376,7 @@
                     <h3 class="qst">Vous manquez de visibilité sur les réseaux sociaux <span class="qtag">?</span></h3>
                     <h3 class="response">Nous avons la solution pour votre branding.</h3></h3>
                     <div id="cta" class="">
-                        <a href="" class="btn btn-default col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-4 col-md-6 col-md-offset-0">Contactez-nous</a>  
+                        <a href="" class="btn btn-default col-xs-6 col-xs-offset-0 col-sm-4 col-sm-offset-4 col-md-6 col-md-offset-0 a-contact">Contactez-nous</a>  
                     </div>
                 </div>
                 <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-5 illustration col-md-pull-6">
@@ -375,7 +411,7 @@
                         <h4>Design graphique</h4>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <div id="cta" class="text-left">
-                            <a href="" class="btn btn-default col-xs-8 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-10 col-md-offset-1">Contactez-nous</a>  
+                            <a href="" class="btn btn-default col-xs-8 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-10 col-md-offset-1 a-contact">Contactez-nous</a>  
                         </div>
                     </div>
                 </div>
@@ -385,7 +421,7 @@
                         <h4>Photographie</h4>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <div id="cta" class="text-left">
-                            <a href="" class="btn btn-default col-xs-8 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-10 col-md-offset-1">Contactez-nous</a>  
+                            <a href="" class="btn btn-default col-xs-8 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-10 col-md-offset-1 a-contact">Contactez-nous</a>  
                         </div>
                     </div>
                 </div>
@@ -395,7 +431,7 @@
                         <h4>Création des sites web</h4>
                         <p>Lorem ipsum dolor sit amet.</p>
                         <div id="cta" class="text-left">
-                            <a href="" class="btn btn-default col-xs-8 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-10 col-md-offset-1">Contactez-nous</a>  
+                            <a href="" class="btn btn-default col-xs-8 col-xs-offset-0 col-sm-6 col-sm-offset-0 col-md-10 col-md-offset-1 a-contact">Contactez-nous</a>  
                         </div>
                     </div>
                 </div>
@@ -466,9 +502,9 @@
                         <h3>Liens Utiles</h3>
                         <ul>
                             <li><a href="">accueil</a></li>
-                            <li><a href="">services</a></li>
-                            <li><a href="">nous découvrir</a></li>
-                            <li><a href="">contact</a></li>
+                            <li><a href="#service">services</a></li>
+                            <li><a href="a-propos.html">nous découvrir</a></li>
+                            <li><a href="" class="a-contact">contact</a></li>
                         </ul>
                     </div>
                     <div class="col-md-3">
