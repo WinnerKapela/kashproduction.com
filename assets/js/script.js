@@ -169,11 +169,10 @@
           });
 
           const swiper2 = new Swiper(".mySwiper2", {
-            effect : "cards",
             speed: 600,
             loop: true,
             
-            slidesPerView: 3,
+            slidesPerView: 1,
             spaceBetween: 25,
             centerSlide:'true',
             grabCursor:'true',
@@ -193,10 +192,10 @@
                 slidesPerView: 1,
               },
               768: {
-                slidesPerView: 2,
+                slidesPerView: 1,
               },
               950: {
-                slidesPerView: 3,
+                slidesPerView: 1,
               },
             },
 

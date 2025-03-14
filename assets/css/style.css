@@ -1,32 +1,10 @@
 *{padding: 0;margin: 0;box-sizing: border-box;}
-.back-to-top {
-    position: fixed;
-    display: none;
-    background: #fff;
-    border: 2px solid red;
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    border-radius: 15px;
-    right: 15px;
-    bottom: 15px;
-    transition: background 0.5s ease-in-out;
-    z-index: 1200;
-  }
-  
-  .back-to-top i {
-     font-size: 1.5em;
-     color: red;
-     font-weight: bold;
-     margin-top: 5px;
-  }
-  
-  .back-to-top:hover {
-    background: #f9f3f3;
-  }
-body{font-family: 'Ubuntu'; overflow-x: hidden; background-color: #fde1e1;}
-header nav{position: fixed !important; height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fdeff0 !important; z-index: 998 !important;
-    transition: top .3s;}
+body{font-family: 'Ubuntu'; overflow-x: hidden; background-color: #fde1e1; font-size: 17px;}
+.back-to-top {position: fixed;display: none;background: #fff;border: 2px solid red;width: 40px;height: 40px;text-align: center;border-radius: 15px;
+right: 15px;bottom: 15px;transition: background 0.5s ease-in-out;z-index: 1200;}
+.back-to-top i {font-size: 1.5em;color: red;font-weight: bold;margin-top: 5px;}
+.back-to-top:hover {background: #f9f3f3;}
+header nav{position: fixed !important; height: 70px; margin-top: 30px; margin-left: 4%; padding: 15px 5px;border-radius: 15px !important; background-color: #fdeff0 !important; z-index: 998 !important;transition: top .3s;}
 #navigation.header-scrolled {background-color: #fff !important; box-shadow: 0px 1px 10px 0px #898989; transition: all 0.5s;}
 nav .nav li{margin-left: 3%; padding: 0% !important;}
 nav .nav li .menu{padding: 10px !important; color: #232323; font-size: 14px; font-weight: 400 !important;}
@@ -115,7 +93,7 @@ form input,form textarea{padding: 20px !important; border-radius: 8px !important
 .swiper .itemswrapper{width: 100%;min-width: 1000px; display: flex; margin: auto auto;}
 .swiper-pagination-bullet{background-color: red !important; opacity: 1; width: 15px !important; height: 15px !important;}
 .credibility{position: relative; margin: 10% 0;}
-.credibility .card{margin:1% 0% 5% 5%; box-shadow: 2px 3px 5px #9f9f9f; }
+.credibility .card{margin:1% 0% 5% 5%; box-shadow: 2px 3px 5px #9f9f9f;}
 .credibility .card:hover{transform: scale(1.05); transition: all .5s; background-color: #f8ecec;;}
 .credibility .red-bullet{position: absolute; top: 39%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 90px; height: 90px; border: 16px solid #fde1e1;}
 .credibility h3{color: #cb0101;}
