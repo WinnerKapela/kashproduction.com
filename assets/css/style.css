@@ -68,7 +68,7 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .service .card-img, .service .bx{width: 30px; font-size: 30px;color:#d53939;}
 .font-ux{color:#bc3b3b;}
 .cta-service{background-color: #ffa800; border: none; border-radius: 10px; color: #fff; padding: 10px; margin-top: 50px;}
-.contact-form{z-index: 1500; position: fixed !important; top: 20px;display: flex;justify-content: center;margin: auto auto;width: 85%;}
+.contact-form{ z-index: 1500; position: fixed !important; top: 20px;display: flex;justify-content: center;margin: auto auto;width: 85%;}
 form{z-index: 1400; display: none; padding: 30px; background-color: #fff;border-radius: 10px; box-shadow: 0px 1px 10px 0px #aaaaaa;}
 .contact-form .bg-form{display: none; position: fixed;background-color: #2e2e2eb5;top: 0px;width: 100%;height: 100%;left: 0%;transition: all .4s;z-index: 1300;}
 form #btn-contact-close{position: absolute;top: 10px;right: 20px;z-index: 10;background-color: #ebebeb;color: #151515; border: none; outline: none; border-radius: 50%; width: 40px;height: 40px;}
@@ -76,7 +76,7 @@ form h2{margin-top: 20px;}
 form .media {margin: 25px 0;}
 form .media i{font-size: 2em; color: #fff; background-color: #2b2a2a; padding: 5px;margin: 0 5px; border-radius: 50px;}
 form .media .tel{color: #131313; font-size: 1.1em;}
-form textarea{width: 100% !important; resize: none;} 
+form textarea{width: 100% !important; resize: none; overflow-y: scroll !important;} 
 form button{padding: 10px 0px !important;}
 form input,form textarea{padding: 20px !important; border-radius: 8px !important;}
 .testimony{margin-top: 12%;}
@@ -268,7 +268,7 @@ h2{font-size: 2.3em !important;}
 .qTag1{color: red; font-size: 2em;}
 .qTag{display: none; }
 .credibility .red-bullet{display: none !important;}
-.mission{background-size: 100% 850px; height: 850px;}
+.mission{background-size: 100% 900px; height: 900px;}
 .mission #cta{margin-top: 50px; position: relative;}
 .mission .descript{position: relative; margin-bottom: 5%;}
 .service-reminder .offre{padding: 10px 10px 65px 10px;}
@@ -329,7 +329,7 @@ display: inline-block;
     .credibility .red-bullet2{position: absolute; top: 47%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}
     .credibility .red-bullet3{position: absolute; top: 72%; left: 44%; background-color: #f74e4e; border-radius: 50%; width: 65px; height: 65px; border: 16px solid #fde1e1;}    
     .branding .hook{font-size: 0.5em;}
-    .mission{background-size: 100% 580px;height: 580px;}
+    .mission{background-size: 100% 880px;height: 800px;}
     .mission .descript{position: relative; margin-bottom: 5% !important;}
     .service-reminder .offre{padding: 10px; margin-bottom: 35px;}
     #Faq h3{font-size: 1em !important;}
