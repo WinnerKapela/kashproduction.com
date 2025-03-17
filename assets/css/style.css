@@ -68,7 +68,7 @@ div .font-tool{position: absolute;top: 90px; right: 0%; width: 20%;}
 .service .card-img, .service .bx{width: 30px; font-size: 30px;color:#d53939;}
 .font-ux{color:#bc3b3b;}
 .cta-service{background-color: #ffa800; border: none; border-radius: 10px; color: #fff; padding: 10px; margin-top: 50px;}
-.contact-form{ z-index: 1500; position: fixed !important; top: 20px;display: flex;justify-content: center;margin: auto auto;width: 85%;}
+.contact-form{ z-index: 1500; position:absolute !important; top: 20px;display: flex;justify-content: center;margin: auto auto;width: 85%;}
 form{z-index: 1400; display: none; padding: 30px; background-color: #fff;border-radius: 10px; box-shadow: 0px 1px 10px 0px #aaaaaa;}
 .contact-form .bg-form{display: none; position: fixed;background-color: #2e2e2eb5;top: 0px;width: 100%;height: 100%;left: 0%;transition: all .4s;z-index: 1300;}
 form #btn-contact-close{position: absolute;top: 10px;right: 20px;z-index: 10;background-color: #ebebeb;color: #151515; border: none; outline: none; border-radius: 50%; width: 40px;height: 40px;}
@@ -76,9 +76,10 @@ form h2{margin-top: 20px;}
 form .media {margin: 25px 0;}
 form .media i{font-size: 2em; color: #fff; background-color: #2b2a2a; padding: 5px;margin: 0 5px; border-radius: 50px;}
 form .media .tel{color: #131313; font-size: 1.1em;}
-form textarea{width: 100% !important; resize: none; overflow-y: scroll !important;} 
+form textarea{width: 100% !important; resize: none;} 
 form button{padding: 10px 0px !important;}
 form input,form textarea{padding: 20px !important; border-radius: 8px !important;}
+input.fieldValid, input.fieldValid{border: 2px solid rgb(0, 172, 0) !important; color: rgb(0, 172, 0) !important;}
 .testimony{margin-top: 12%;}
 .testimony .design-2{top: -50px;}
 .testimony .bg-design:first-child{top: -40px; left: -8%; background-color: #f2d1d1;}
@@ -157,6 +158,16 @@ form input,form textarea{padding: 20px !important; border-radius: 8px !important
 .about2 .cards li{z-index: 950; background-color: red;color: #fff;font-weight: 500; margin: 10px; padding:15px; border-radius: 8px; list-style-type: none;}
 .about2 .cta {margin-top: 25px;}
 .about2 .cta a{color: #efa002; text-decoration: underline;font-weight: bold;}
+
+/*Style for error php page*/
+.box{background-color:#fff;z-index: 2000;position: fixed;width: 100%;}
+ #msg{display: block;justify-content: center;margin: 230px auto;box-shadow: 0px 0px 8px #959494;text-align: center;padding: 40px 10px;font-size:1.1em;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;border-radius: 8px;color: red;background-color:#fff;}
+ .img{width: 50px;display: block;justify-content: center;margin: 0 auto;}
+ #msg2{display: block;justify-content: center;margin: 230px auto;box-shadow: 0px 0px 8px #959494;text-align: center;
+ padding: 50px 10px;font-size:1.1em;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;border-radius: 8px;color: green;background-color:#fff;
+         }
+
 .footer{background-color: #131313; color: #fff; padding: 60px 15px 0px 15px;}
 .footer .part1 span{font-size: 25px; font-weight: 500; margin: 10px;}
 .footer .part1 p{margin: 15px 0px;}

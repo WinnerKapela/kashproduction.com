@@ -104,7 +104,8 @@
             $('.formulaire').fadeIn(500);
             $('.formulaire').show(300);
             $('.bg-form').show();
-            
+              $('html, body').animate({scrollTop : 0},50, 'easeInOutExpo');
+              return false;
           })
           $('#btn-contact-close').click(function(){
             $('.formulaire').fadeOut(500);
@@ -112,7 +113,7 @@
             $('.bg-form').hide();
           })
           // FAQ section
-            $(document).ready(function(){
+            
               $('#one').click(function(){
                      $('.wrapper1').toggleClass('wrapper-one');   
                    })
@@ -130,7 +131,135 @@
                        $('.wrapper5').toggleClass('wrapper-five');
                    })
        
-               })
+            /*back-to-top*/      
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+      $('.back-to-top').fadeIn('slow');
+    } else {
+      $('.back-to-top').fadeOut('slow');
+    }
+  });
+  $('.back-to-top').click(function(){
+    $('html, body').animate({scrollTop : 0},1000, 'easeInOutExpo');
+    return false;
+  });
+
+/**Form function */
+var $field = $('.field'),
+$username = $('#username'),
+$email = $('#email'),
+$subject = $('#subject'),
+$message = $('#message'),
+$submit = $('#submit-btn'),
+$regName = /^[a-zA-ZéèîïêàâÊ][a-zéèîïêàâç]+([-'\s][a-zA-ZéèîïêàâÊ][a-zéèîïêàâç]+)?/i,
+$regMail = /^[a-z0-9.-_]+@[a-z0-9.-_]+\.[a-z]{2,6}$/i;
+
+$username.keyup(function(e){
+        if($regName.test($username.val())){
+            $($username).addClass('fieldValid');
+                
+            }
+            else if($username.val() =='' || !$regName.test($username.val())){
+              $($username).removeClass('fieldValid');
+            }
+        });
+       
+$email.keyup(function(e){
+        if($regMail.test($email.val())){
+          $($email).addClass('fieldValid');
+                
+            }
+            else if($email.val() =='' || !$regMail.test($email.val())){
+              $($email).removeClass('fieldValid');
+            }
+        });
+$subject.keyup(function(e){
+          if($regName.test($subject.val())){
+            $($subject).addClass('fieldValid');
+                  
+              }
+              else if($subject.val() =='' || !$regName.test($subject.val())){
+                $($subject).removeClass('fieldValid');
+              }
+          });
+$message.keyup(function(e){
+            if($message.val() != ''){
+              $($message).addClass('fieldValid');
+              $message.css({
+                color : 'rgb(0, 172, 0)',
+                border : '2px solid rgb(0, 172, 0)'
+            })
+            }
+            else{
+              $($message).removeClass('fieldValid');
+              $message.css({
+                color : 'red',
+                border : '2px solid red'
+            })
+              e.preventDefault(); 
+              }
+        });
+       
+$submit.click(function(e){
+
+        if($regName.test($username.val())){
+          
+            $($username).addClass('fieldValid');
+              
+            }
+            else if($username.val() =='' || !$regName.test($username.val())){
+        
+                $($username).removeClass('fieldValid');    
+                $username.css({
+                    color : 'red',
+                    border : '2px solid red'
+                })
+                e.preventDefault();
+            }
+        
+        if($regMail.test($email.val())){
+            $($email).addClass('fieldValid');
+                
+            }
+            else if($email.val() =='' || !$regMail.test($email.val())){
+              $($email).removeClass('fieldValid');
+              $email.css({
+                color : 'red',
+                border : '2px solid red'
+            })
+            e.preventDefault();
+            }
+        if($regName.test($subject.val())){
+              $($subject).addClass('fieldValid');
+                    
+                }
+                else if($subject.val() =='' || !$regName.test($subject.val())){
+                  $($subject).removeClass('fieldValid');
+                  $subject.css({
+                    color : 'red',
+                    border : '2px solid red'
+                })
+                e.preventDefault();
+                }
+        if($message.val() == ''){
+            $($message).removeClass('fieldValid');
+            $message.css({
+              color : 'red',
+              border : '2px solid red'
+          })
+            e.preventDefault(); 
+            }
+            else if($message.val() != ''){
+                $($message).addClass('fieldValid');
+                
+            }
+    
+    else{
+        $('form').submit();
+        $('#submit-btn').css({'cursor': 'not-allowed'});
+    }
+     
+});
           });
           const swiper = new Swiper(".mySwiper", {
       
